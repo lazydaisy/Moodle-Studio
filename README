@@ -1,10 +1,12 @@
 
-LATEST UPDATES
+LATEST UPDATES (2012051100)
 --------------
 
 AARDVARK POST-IT (Moodle 2.2 Theme)
 
-Fixed missing headers due to incorect layout for STANDARD setting in aardvark_postit/config.php
-Cleaned up the CSS
-Used UNICODE characters rather than images for the toggle tab in the profilebar.
+Fixed missing headers due to incorect setting for STANDARD pagelayout in aardvark_postit/config.php and also added redirect pagelayout
+Cleaned up CSS whitespace
+Used UNICODE characters rather than images for the toggle tab in the profilebar
+Removed toggle5 script from profilebar and moved it to theme/aardvark_postit/javascript/ directory as a seperat file
+Added javascript toggle5 file in theme/aardvark_postit/config.php so that it gets included on each page
 
