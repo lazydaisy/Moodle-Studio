@@ -1,0 +1,153 @@
+/* Overide for RTL layout
+--------------------------*/
+.dir-rtl,
+.mdl-right,
+.dir-rtl .mdl-right,
+.dir-rtl .mdl-left {
+    text-align: right;
+}
+.dir-rtl .headermain,
+.dir-rtl .breadcrumb {
+    float: right;
+}
+.dir-rtl .headermenu,
+.dir-rtl .navbutton {
+    float: left;
+}
+.dir-rtl .breadcrumb ul li {
+    float: right;
+    margin-left: 5px;
+}
+.dir-rtl .mform .fitem .fitemtitle {
+    float:right;
+}
+
+/* Login page
+-------------------------*/
+.dir-rtl .loginbox .signuppanel .subcontent {
+    text-align: right;
+}
+.dir-rtl .loginbox .loginform .form-label {
+    float:right;
+    text-align:left;
+}
+.dir-rtl .loginbox .loginform .form-input {
+    text-align: right;
+}
+
+/** Fix YUI 2 Treeview for Right to left languages **/
+.dir-rtl .ygtvtn,
+.dir-rtl .ygtvtm,
+.dir-rtl .ygtvtmh,
+.dir-rtl .ygtvtmhh,
+.dir-rtl .ygtvtp,
+.dir-rtl .ygtvtph,
+.dir-rtl .ygtvtphh,
+.dir-rtl .ygtvln,
+.dir-rtl .ygtvlm,
+.dir-rtl .ygtvlmh,
+.dir-rtl .ygtvlmhh,
+.dir-rtl .ygtvlp,
+.dir-rtl .ygtvlph,
+.dir-rtl .ygtvlphh,
+.dir-rtl .ygtvdepthcell,
+.dir-rtl .ygtvok,
+.dir-rtl .ygtvok:hover,
+.dir-rtl .ygtvcancel,
+.dir-rtl .ygtvcancel:hover {
+    width:18px;
+    height:22px;
+    background-image:url([[pix:theme|yui2-treeview-sprite-rtl]]);
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+.dir-rtl .ygtvtn {background-position: 0 -5600px;}
+.dir-rtl .ygtvtm {background-position: 0 -4000px;}
+.dir-rtl .ygtvtmh,
+.dir-rtl .ygtvtmhh {background-position: 0 -4800px;}
+.dir-rtl .ygtvtp {background-position: 0 -6400px;}
+.dir-rtl .ygtvtph,
+.dir-rtl .ygtvtphh {background-position: 0 -7200px;}
+.dir-rtl .ygtvln {background-position: 0 -1600px;}
+.dir-rtl .ygtvlm {background-position: 0 0;}
+.dir-rtl .ygtvlmh,
+.dir-rtl .ygtvlmhh {background-position: 0 -800px;}
+.dir-rtl .ygtvlp {background-position: 0 -2400px;}
+.dir-rtl .ygtvlph,
+.dir-rtl .ygtvlphh {background-position: 0 -3200px}
+.dir-rtl .ygtvdepthcell {background-position: 0 -8000px;}
+.dir-rtl .ygtvok {background-position: 0 -8800px;}
+.dir-rtl .ygtvok:hover {background-position: 0 -8844px;}
+.dir-rtl .ygtvcancel {background-position: 0 -8822px;}
+.dir-rtl .ygtvcancel:hover {background-position: 0 -8866px;}
+
+.dir-rtl #yui-gen4.yui-layout-unit-left {left:500px !important;}
+.dir-rtl #yui-gen6.yui-layout-unit-center {left:0px !important;}
+.dir-rtl .yui-skin-sam .yui-panel .hd {text-align:left;}
+.dir-rtl .yui-skin-sam .yui-layout .yui-layout-unit div.yui-layout-bd {text-align:right;}
+
+/* Forum postline
+-------------------------*/
+.dir-rtl .forumpost .left.picture {
+    background-image: url([[pix:theme|rtpostline]]);
+    background-repeat: no-repeat;
+    background-position: -5px 109%;
+}
+/* Fix for horizontal scroll bar
+--------------------------------*/
+.dir-rtl html {overflow-x: hidden;}
+
+/* Auto-completion Toggle-completion
+------------------------------------*/
+.dir-rtl.path-course-view li.activity form.togglecompletion,
+.dir-rtl.path-course-view li.activity span.autocompletion {
+    left: auto;
+    right: -20px;
+    padding: 0;
+}
+
+/* right align the DOCK panel
+------------------------------*/
+.dir-rtl #dockeditempanel {
+    right: 100%;
+}
+.dir-rtl #dock {
+    left:auto;
+    right: 0px;
+    border-left: 1px solid #DDD;
+}
+.dir-rtl #dock .dockedtitle {
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid #EEE;
+    cursor: pointer;
+}
+ body.dir-rtl.has_dock {
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+/* padding the link letters when filtering by first and last name
+------------------------------------------------------------------*/
+.dir-rtl .initialbar a {
+    padding-right: 2px;
+}
+
+/* right align table box in course report and admin pages
+----------------------------------------------------------*/
+.dir-rtl .boxaligncenter, #page-admin-course-index.dir-rtl .editcourse {
+    margin-right: 0;
+}
+
+/* switch table's cell's right and left alignment in rtl mode
+--------------------------------------------------------------*/
+.dir-rtl td[align=left] {
+    text-align: right;
+}
+.dir-rtl td[align=right] {
+    text-align: left;
+}
+/* right-align page-header p
+-----------------------------*/
+.dir-rtl #page-header p {text-align: right;}
+.dir-rtl #page-header p img {float: right!important;}

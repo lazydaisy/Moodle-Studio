@@ -1,0 +1,167 @@
+/* Core Styles
+-------------------------*/
+a, a:link, a:visited {
+    color: #69f;
+    text-decoration: none;
+}
+a:active, a:hover {
+    color: #036;
+}
+a:focus {
+    color: #c03;
+}
+h1.headermain {
+    font: 1.5em/1.1 sans-serif;
+    letter-spacing: 0.051em;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.navbar {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+.navbutton {
+    padding: 0;
+    margin: 0;
+}
+#page {
+    color: #036;
+    font-family: sans-serif;
+}
+#page-content,
+#region-main-box,
+#region-pre-box {
+    background-color: #FFF;
+}
+.generalbox,
+.forumpost,
+.block,
+.calendartable th,
+.calendartable td {
+    border-width: 0;
+}
+/* Forumpost
+-------------------------*/
+.forumpost .posting {
+    border: 1px solid #DADADA;
+    padding: 20px;
+}
+.forumpost .left.picture {
+    background-image: url([[pix:theme|postline]]);
+    background-repeat: no-repeat;
+    background-position: 180% 106%;
+}
+/* YUI Menu - custom menu
+-------------------------------*/
+#custommenu {
+    width: 100%;
+}
+#custommenu .yui3-menu-label-active,
+#custommenu .yui3-menu-label-menuvisible,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-active,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible,
+#custommenu .yui3-menuitem-active .yui3-menuitem-content,
+#custommenu .yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content,
+#custommenu .yui3-menu-horizontal.javascript-disabled li a:hover {
+    background-color:#DDD;
+    color: #333;
+}
+#custommenu .yui3-menu-content,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-content {
+    background-image:none;
+    background-color:#EEE;
+    border-width:0;
+    padding:0;
+}
+#custommenu .yui3-menuitem-active .yui3-menuitem-content {
+    background-color: #DDD;
+    background-image: none;
+    color: #333;
+}
+#custommenu .yui3-menu-label,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label {
+    background-image:url([[pix:theme|vertical-menu-submenu-indicator]]);
+    background-position:right center;
+    background-repeat:no-repeat;
+    color: #333;
+}
+#custommenu .yui3-menu-label.yui3-menu-label-menuvisible,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label.yui3-menu-label-menuvisible {
+    background-image:url([[pix:theme|horizontal-menu-submenu-indicator]]);
+    color: #333;
+}
+#custommenu .yui3-menu-horizontal .yui3-menu-label,
+#custommenu .yui3-menu-horizontal .yui3-menuitem-content {
+    border-width:0;
+    text-transform: uppercase;
+    text-decoration:none;
+    font-size:1em;
+    font-weight: 200;
+    line-height:30px;
+    cursor: pointer;
+    padding:0 20px;
+    color: #333;
+}
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content .ul {
+    border-width:0;
+}
+#custommenu .yui3-menu-horizontal.javascript-disabled li a {
+    padding: 0 20px;
+    display: block;
+}
+/* MOD STYLES
+-------------------------*/
+.mod_introbox {
+    border: 0 none;
+}
+/* COURSE STYLES
+-------------------------*/
+.course-content .current {
+    background: none;
+    border: 3px dashed #C03;
+}
+.course-content ul.topics li.section .left,
+.course-content ul.weekly li.section .left {
+    font-size: 25px;
+    margin: 1em 0 0;
+}
+/* DOCK STYLES
+-------------------------*/
+
+#dock {
+    left: 0;
+    border-right: 1px solid #DADADA;
+}
+#dock .dockedtitle {
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #EEE;
+    cursor: pointer;
+}
+#dock .dockedtitle h2 {
+    font-size: 100%;
+    line-height: 1.4;
+    text-align: center;
+    color: #036
+}
+/* COMMAND ICONS (2011-10-13)
+-------------------------------------*/
+img.iconsmall,
+.block.block_with_controls div.header div.commands a img,
+.course-content ul.topics li.section .right img,
+.course-content ul.topics li.section .left img {
+    height:15px;
+    margin:2px;
+    width:15px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding:1px;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/* REPORT & ADMIN LAYOUTS
+-------------------------*/
+.pagelayout-admin .no-overflow,
+.pagelayout-report .no-overflow { overflow: auto;}
+

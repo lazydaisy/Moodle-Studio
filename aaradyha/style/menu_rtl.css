@@ -1,0 +1,34 @@
+/** Overide for RTL layout **/
+.dir-rtl .block .header .block_action {
+    float:left;
+}
+.dir-rtl .block .header .commands {
+    text-align: right;
+}
+
+.dir-rtl .coursebox h3, .dir-rtl .coursebox .info, .dir-rtl .coursebox .summary {text-align: right;}
+.dir-rtl a.logo {float: right;}
+.dir-rtl .headermenu, .langmenu {clear: left;right:auto;}
+.dir-rtl .headermenu {left: 10px;}
+
+.dir-rtl ul.dropdown {float:right;}
+.dir-rtl ul.dropdown ul{right: 0;left: auto;}
+.dir-rtl ul.dropdown ul ul {right: 203px;left: auto;}
+.dir-rtl ul.dropdown ul span,
+.dir-rtl ul.dropdown ul span a,
+.dir-rtl ul.dropdown ul li.clickable-with-children > a {
+    background-image: url([[pix:theme|nav-arrow-left]]);
+    background-position: 0% 50%;
+}
+
+
+.dir-rtl ul.dropdown ul li:hover > span,
+.dir-rtl ul.dropdown ul li:hover > span a,
+.dir-rtl ul.dropdown ul ul *.open,
+.dir-rtl ul.dropdown ul ul li:hover > span,
+.dir-rtl ul.dropdown ul ul li:hover > span a {
+    background-color:#fff;
+    background-image:url([[pix:theme|left-arrowover]]);
+    background-position: 0% 50%;
+    color:#036;
+}
