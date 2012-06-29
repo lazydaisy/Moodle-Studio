@@ -1,8 +1,17 @@
-
-LATEST UPDATES (2012051100)
+LATEST UPDATES
 --------------
 
+(2012062900)
+
+AARADYHA (Moodle 2.3 Theme)
+https://github.com/lazydaisy/Moodle-Studio/tree/aaradyha
+
+Fixed lang/en/theme_aaradyha.php to correct typo and make some amendments to $footnotedesc & $mastheaddesc
+
+(2012051100)
+
 AARDVARK POST-IT (Moodle 2.2 Theme)
+https://github.com/lazydaisy/Moodle-Studio/tree/aardvark_postit
 
 Fixed missing headers due to incorect setting for STANDARD pagelayout in aardvark_postit/config.php and also added redirect pagelayout
 Cleaned up CSS whitespace
