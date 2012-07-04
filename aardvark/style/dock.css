@@ -1,0 +1,71 @@
+#dock {
+    padding-top: 0;
+    width: 30px;
+    margin-top: 45px;
+    background-color: #000;
+}
+#dock .dockeditem_container #dock .dockeditem {
+    border: 0 none;
+
+}
+#dock .dockeditem.firstdockitem {
+    margin-top: 0;
+}
+
+
+#dock .dockedtitle {
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font: 100% Constantia, Lucidabright, Lucida, Georgia, serif;
+    color: #fff;
+}
+#dock .dockeditempanel_content {
+    border: 1px solid #dadada;
+    border-left: 0 none;
+    font-size: 90%;
+}
+#dock .dockeditempanel_hd {
+    text-align: left;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #eee;
+    border-bottom: 1px solid #dadada;
+}
+#dock .dockeditempanel_hd h2 {
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 3px;
+}
+#dock .dockeditempanel_bd ul,
+#dock .dockeditempanel_bd li {
+    list-style-type: none;
+    padding: 0;
+}
+#dockeditempanel {
+    margin-left:1px;
+}
+#dock div.controls {
+    margin-top: 20px;
+    padding-top: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+#dockeditempanel .dockeditempanel_hd .commands img {
+    float: right;
+    margin-right: 2px;
+    vertical-align: middle;
+    height: 11px;
+    width: 11px;
+}
+#dock .dockeditempanel_content a,
+    table a,
+    .mod-indent a:hover {
+    text-decoration:none;
+}
+#dock .dockedtitle h2,
+#dock .dockeditempanel_bd {
+    font-weight: 200;
+}

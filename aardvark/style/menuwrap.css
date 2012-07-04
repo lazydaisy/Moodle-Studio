@@ -1,0 +1,216 @@
+#menuwrap {
+    height: 45px;
+    width: 100%;
+    clear: both;
+    background-color: [[setting:menubackcolor]];
+    background-image: url([[pix:theme|menu/menugrad]]);
+    background-repeat: repeat-x;
+    background-position: left top;
+    box-shadow: 0 0 5px #000;
+    z-index: 9999; /* this can be changed if needed */
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/* Homeicon Logo
+-------------------------*/
+#homeicon a.homeiconlink {
+    display: block;
+    float: left;
+    border: 0;
+    max-width: 113px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+#homeicon a.homeiconlink:hover {
+    background:[[setting:menuhovercolor]];
+}
+/* Prifilebar
+-------------------------*/
+#profileblock {
+    float: right;
+    text-align: right;
+    max-width: 500px;
+    right: 0;
+}
+#profilepic {
+    text-align: right;
+    float: right;
+    display: inline;
+    margin: 2px 2px -2px;
+}
+#profilepic img {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+}
+#profilelogin {
+    text-align: right;
+    width: 500px;
+    margin-right: 0;
+    margin-top: auto;
+    float: right;
+    height: 45px;
+}
+#profilelogin ul li {
+    padding-left:10px;
+    padding-right:0;
+    display:inline;
+    margin-right:0;
+    color:#aeaeae;
+}
+.profilelogin .loginform {
+    width:7em;
+    margin-left:4px;
+    display:inline;
+    background:#f9f9f9;
+    border:1px solid #ccc;
+    color:#333;
+    padding:4px;
+}
+#profilename {
+    text-align:right;
+    width:150px;
+    margin-right:0;
+    margin-top:auto;
+    margin-bottom:auto;
+    float:right;
+}
+#profilename ul li {
+    padding-left: 10px;
+    padding-right: 0;
+    display: inline;
+    margin-right: 0;
+}
+.profilename .loginform {
+    width: 5em;
+    margin-left: 4px;
+    display: inline;
+    font-size: 0.8em;
+}
+.profilename,
+.profilename a {
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2;
+    cursor:pointer !important;
+    border-right:none !important;
+    border-top:none !important;
+    border-bottom:none !important;
+    color:#fff !important;
+    margin:0 !important;
+}
+#profilebar {
+    background:url([[pix:theme|profile/black95]]);
+    margin-right:auto;
+    margin-left:auto;
+    width: 960px;
+    clear:both;
+    font-size:12px;
+    font-weight:200;
+    color:#fff;
+    position:relative;
+}
+#profilebar h4 {
+    font-size:12px;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#fff;
+    margin:0 !important;
+    padding:8px 0 10px 10px;
+}
+#profilebar .block {
+    border:0 !important;
+    background:transparent !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+#profilebar .block_action {
+    display:none !important;
+}
+#profilebar .event a:visited,
+#profilebar .event a:hover {
+    color:#fff;
+    text-decoration:none;
+}
+#profilebar .date {
+    font-size: 0.85em;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 20px;
+}
+#profilebar hr {
+    height: 1px;
+    color: #ccc;
+    background-color: #ccc;
+    border: none;
+    border-style: none;
+}
+.profilebar_block,
+.profilebar_events,
+.profilebar_account {
+    float: left;
+    height: auto;
+    padding: 10px;
+}
+.profilebar_block,
+.profilebar_events {
+    width: 250px;
+}
+.profilebar_account {
+    width: 398px;
+}
+#profileoptions ul li {
+    padding-left:0;
+    padding-right:0;
+    list-style-type:none;
+    margin-right:0;
+}
+.profileoptions a:hover {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+}
+.profileoptions li:hover {
+    background:[[setting:menuhovercolor]];
+    text-decoration:none;
+}
+.profilebarclear {
+    clear:both;
+    padding-bottom:5px;
+}
+#profilename img {
+    vertical-align:middle;
+}
+#profilebar .event,div.category.subcategory.with_children {
+    margin-left:20px;
+}
+#profilebar .event a,
+#profilebar .event a:visited,
+#profilebar .event a:hover,
+table#categoryquestions th a {
+color:#fff;
+}
+#profileoptions img {
+    vertical-align:middle;
+    padding:2px;
+}
+.profileoptions,
+.profileoptions a,.profileoptions,
+.profileoptions a:visited {
+background-color:transparent;
+color:#fff;
+}
+#toggletab #menuwrap #profilelogin form#login ul li input[type="text"],
+#toggletab #menuwrap #profilelogin form#login ul li input[type="password"] {
+    background-color: #333;
+    color: #EEEEEE;
+    padding: 4px;
+    width: auto;
+}

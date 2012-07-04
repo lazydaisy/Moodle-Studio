@@ -1,0 +1,110 @@
+div.yui3-widget.yui3-overlay.yui3-widget-positioned {
+    border:1px solid #ccc;
+}
+div.yui3-overlay-content.yui3-widget-stdmod {
+    border:1px solid #fff;
+    background: #f9f9f9 url([[pix:theme|alert-overlay]]) repeat-x;
+}
+div.yui3-widget-bd {
+    border:none;
+    background:none;
+}
+div.yui3-widget-bd h1.helpheading {
+    font-size:16px;
+    font-weight:800;
+    margin-top:5px;
+}
+.yui-module.yui-overlay.yui-panel div.hd {
+    background: #f9f9f9 url([[pix:theme|bart5]]) repeat-x 0 90%;
+}
+.displace {
+position: absolute;
+    left:-5000px;
+}
+#menuitemswrap {
+    font-size:13px;
+    font-weight:600;
+    float:left;
+    border:0;
+    margin-left:0;
+    margin-top:0;
+    margin-bottom:0;
+}
+#custommenu {
+    border: 0 none;
+    height: 40px;
+}
+div.yui3-menu.yui3-menu-horizontal {
+    background:transparent;
+    border:none;
+    float:left;
+}
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label {
+    background-image:none;
+}
+div.yui3-menu-content {
+    border:none;
+    background:transparent;
+}
+.yui3-menu-content li a {
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 45px;
+    cursor: pointer;
+    border-right: 0 none;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    color: #fff;
+    margin: 0;
+}
+.yui3-menu-horizontal .yui3-menu-label {
+    color: #fff;
+}
+.yui3-menu-horizontal .yui3-menu-label-menuvisible {
+    background-position: 5px -23px;
+}
+.yui3-menu-content li {
+    border: 0 none;
+}
+.yui3-menu-content li:hover {
+    background:[[setting:menuhovercolor]];
+}
+
+div.yui3-menu.custom_menu_submenu {
+    background: url([[pix:theme|menu/yuiarrow]]) no-repeat 20px 0;
+    border: 0 none;
+    min-width: 100px;
+    z-index: 99998;
+}
+div.yui3-menu.custom_menu_submenu div.yui3-menu.custom_menu_submenu {
+    background:none;
+    min-width:100px;
+}
+div.yui3-menu.custom_menu_submenu div.yui3-menu-content {
+    z-index:99999;
+    min-width:200px;
+    padding-top:0;
+    padding-bottom:0;
+    background:url([[pix:theme|menu/black95]]);
+    margin:20px 0 0 -40px;
+}
+div.yui3-menu.custom_menu_submenu div.yui3-menu-content div.yui3-menu.custom_menu_submenu div.yui3-menu-content {
+    position:absolute;
+    top:-15px;
+}
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li {
+    border-left:none;
+}
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a {
+    font-size:12px;
+    border-bottom:0 solid #ccc;
+    border-top:0 solid #fff;
+    text-transform:none;
+    text-decoration:none;
+}
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a:hover {
+    cursor:pointer;
+    text-decoration:none;
+    background:[[setting:menuhovercolor]];
+}

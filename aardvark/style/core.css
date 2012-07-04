@@ -1,0 +1,228 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: [[setting:backcolor]];
+}
+body {
+    background-color: [[setting:backcolor]];
+    background-image: url([[setting:backimage]]);
+    background-position: [[setting:backposition]];
+}
+a, a:visited {
+    color:#333;
+}
+a:hover {
+    text-decoration: underline;
+    color: [[setting:menuhovercolor]];
+}
+/* Headings
+-------------------------*/
+h3.sectionname,
+h2.headingblock,
+h2.main,
+h3.main,
+h2.main a,
+h3.main a {
+    font-size:18px;
+    text-transform:uppercase;
+    text-align:left;
+    padding-bottom:2px;
+    display:block;
+    font-weight:400;
+    margin:3px 0 2px;
+}
+div.loginpanel h2,
+div.signuppanel h2 {
+    font-size:18px;
+    text-transform:uppercase;
+    display:block;
+    font-weight:400;
+}
+/* Page
+-------------------------*/
+#page {
+    width:[[setting:width]];
+    margin: 0 auto;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #333;
+    position: relative;
+    background-color: white;
+}
+#page-header {
+    height: 35px;
+    margin: 0;
+    padding: 100px 0 0;
+}
+#logowrap {
+    height:80px;
+    float:left;
+    margin-left:0;
+    margin-right:auto;
+}
+#logo {
+    float:left;
+    margin-top:10px;
+    margin-left:0;
+}
+.headermain .langmenu {
+    float: right;
+    display: inline;
+    line-height: 28px;
+    font-size: 9px;
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+.clearer {
+    clear:left;
+}
+#page-header {
+    margin: 50px 0 0;
+    padding: 0;
+    width: 100%;
+}
+#page-site-index #page-header {
+    margin: 0;
+}
+
+/* Navbar and breadcrumb
+-------------------------*/
+
+.breadcrumb {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-left: 7px;
+}
+.breadcrumb a {
+    color: #369;
+}
+.breadcrumb ul li a:link {
+    color: #666;
+    line-height: 2;
+}
+.arrow,
+.arrow_button input {
+    color: #aaa;
+}
+.breadcrumb li a,
+.breadcrumd li a:link,
+.breadcrumb li a:visited {
+    font-weight: 200;
+    text-decoration: none;
+    color: #555;
+    font-size: 12px;
+}
+.breadcrumb li a:active,
+.breadcrum li a:hover {
+    text-decoration:none;
+    background:[[setting:menuhovercolor]];
+}
+#ebutton {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    float: right;
+}
+#page-footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#footerwrapper {
+    background-color: #eee;
+    margin: 45px 0 0;
+}
+#footerinner {
+    margin: 0;
+    border-top: 1px solid #ccc;
+    color: #999;
+    height: 150px;
+    font-size: 10px;
+    padding: 1%;
+    width: 98%;
+}
+#footerinner a {
+    color:#999;
+}
+#footersocial ul {
+    margin-left:0;
+}
+#footersocial ul li {
+    padding-left:0;
+    padding-right:0;
+    list-style-type:none;
+    margin-right:0;
+        display:inline;
+}
+.footer_block,
+.footersocial {
+    float:left;
+    height:130px;
+    overflow:hidden;
+    width:30%;
+    padding:10px;
+}
+#footersocial img {
+    vertical-align:middle;
+    padding:2px;
+}
+#themeorigin {
+    margin: 0 auto;
+    color:#bbb;
+    font-size:10px;
+    padding:10px 10px 10px 20px;
+}
+#themeorigin a:link,
+#themeorigin a:visited,
+#themeorigin a:hover {
+color:#bbb;
+font-size:10px;
+text-decoration:none;
+}
+
+/* MISC
+-------------------------*/
+td.maincalendar table.calendartable th,
+table.rolecap .header,
+.generaltable .header,
+.forumheaderlist .header,
+.files .header,
+.editcourse .header,
+.logtable .header,
+#attempts .header,
+table#categoryquestions th {
+    background-color: #f9f9f9;
+    font-size: 11px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+}
+.breadcrumb li img,
+div.yui3-overlay-content.yui3-widget-stdmod img,
+#homeicon img,
+.mod-indent img {
+vertical-align:middle;
+}
+/* Color picker
+-------------------------*/
+div.admin_colourpicker { width: 300px; height: 50px;}
+.admin_colourpicker .colourdialogue {
+    float: left;
+    width: 250px;
+    height: 50px;
+    border: 0 none;
+}
+.admin_colourpicker .previewcolour,
+.admin_colourpicker .currentcolour {
+    width: 25px;
+    height: 25px;
+    border: 0 none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+

@@ -1,0 +1,31 @@
+.calendar_event_course {
+    background-color: #ddd;
+    border:#bbb solid 1px;
+}
+.calendar_event_global {
+    background-color: #ddeeb8;
+    border:#adc687 solid 1px;
+}
+.calendar_event_group {
+    background-color: #fee7ae;
+    border: #ebce7b solid 1px;
+}
+.calendar_event_user {
+    background-color: #bee2f7;
+    border: #98c9e7 solid 1px;
+}
+.minicalendar td.today {
+    border: #de473c solid 2px;
+}
+.minicalendar td.calendar_event_global {
+    border: #adc687 solid 1px;
+}
+.minicalendar td.calendar_event_group {
+    border: 1px solid #ebce7b;
+}
+.minicalendar td.calendar_event_course {
+    border: 1px solid #bbb;
+}
+.minicalendar td.calendar_event_user {
+    border: 1px solid #98c9e7;
+}

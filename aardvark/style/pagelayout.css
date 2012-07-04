@@ -1,0 +1,65 @@
+/*********************************************************************************************
+
+    left column width: 210px
+    right column width: 210px
+    padding left/right column: 10px
+
+**********************************************************************************************/
+
+#page-header {float:left;width:100%;}
+#page-content {clear:both;float:left;overflow:hidden;position:relative;width:100%;}
+#page-content #region-main-box {float:left;left:230px;position:relative;width:200%;}
+#page-content #region-main-box #region-post-box {float:left;left:50%;margin-left:-460px;position:relative;width:100%;}
+#page-content #region-main-box #region-post-box #region-main-wrap {float:right;position:relative;right:100%;width:50%;}
+#page-content #region-main-box #region-post-box #region-main-wrap #region-main {margin: 0 10px 0 470px;overflow:hidden;}
+#page-content #region-main-box #region-post-box #region-pre {float:left;left:240px;margin-left:-50%;overflow:hidden;position:relative;width:210px;}
+#page-content #region-main-box #region-post-box #region-post {float:left;left:10px;overflow:hidden;position:relative;width:210px;}
+#page-content #region-main-box #region-post-box #region-main-wrap #region-main .region-content {overflow:hidden;padding:20px 0px;}
+#page-content #region-main-box #region-post-box #region-pre .region-content {overflow:hidden;padding:20px 0px;}
+#page-content #region-main-box #region-post-box #region-post .region-content {overflow:hidden;padding:20px 0px;}
+#page-footer {clear:both;float:left;width:100%;}
+
+
+/** Only side pre **/
+
+.side-pre-only #page-content #region-main-box #region-post-box {margin-left:-230px;}
+.side-pre-only #page-content #region-main-box #region-post-box #region-main-wrap #region-main {margin-left:240px;}
+.side-pre-only #page-content #region-main-box #region-post-box #region-pre {left:10px;}
+.side-pre-only #page-content #region-main-box #region-post-box #region-post {width:0px;}
+
+
+/** Only side post **/
+
+.side-post-only #page-content #region-main-box {left:0px;}
+.side-post-only #page-content #region-main-box #region-post-box {margin-left:-230px;}
+.side-post-only #page-content #region-main-box #region-post-box #region-main-wrap #region-main {margin-left:240px;}
+.side-post-only #page-content #region-main-box #region-post-box #region-pre {width:0px;}
+.has_dock.side-post-only .page-middle #region-main-box #region-post-box #region-main-wrap #region-main {margin-left:230px;}
+
+
+/** Moving block when side-post-only **/
+
+.blocks-moving.side-post-only #page-content #region-main-box {float:left;left:230px;position:relative;width:200%;}
+.blocks-moving.side-post-only #page-content #region-main-box #region-post-box {float:left;left:50%;margin-left:-460px;position:relative;width:100%;}
+.blocks-moving.side-post-only #page-content #region-main-box #region-post-box #region-main-wrap {float:right;position:relative;right:100%;width:50%;}
+.blocks-moving.side-post-only #page-content #region-main-box #region-post-box #region-main-wrap #region-main {margin: 0 10px 0 470px;overflow:hidden;}
+.blocks-moving.side-post-only #page-content #region-main-box #region-post-box #region-pre {float:left;left:240px;margin-left:-50%;overflow:hidden;position:relative;width:210px;}
+.blocks-moving.side-post-only #page-content #region-main-box #region-post-box #region-post {float:left;left:10px;overflow:hidden;position:relative;width:210px;}
+
+
+/** No blocks whatsoever **/
+
+.content-only #page-content #region-main-box {left:0px;}
+.content-only #page-content #region-main-box #region-post-box {margin-left:0px;}
+.content-only #page-content #region-main-box #region-post-box #region-main-wrap #region-main {margin-left:0px;}
+.content-only #page-content #region-main-box #region-post-box #region-pre {width:0px;}
+.content-only #page-content #region-main-box #region-post-box #region-post {width:0px;}
+
+
+/** Stabalise some IE6 behaviour **/
+
+.ie6 #region-pre .region-content,
+.ie6 #region-post .region-content {padding:0 !important;width:100%;float:none;}
+.ie6 #region-pre .region-content .block,
+.ie6 #region-post .region-content .block {width:auto;padding:0;margin:10px;}
+

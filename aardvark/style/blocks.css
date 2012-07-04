@@ -1,0 +1,111 @@
+.block {
+    border: 0 none;
+    background-color: #fff;
+    margin: 0;
+    padding: 5px;
+}
+.block div.header {
+    padding-top: 0;
+    min-height: 33px;
+    height: auto;
+    background-color: #eee;
+    margin: 0;
+}
+.block.block_with_controls div.header div.commands {
+    text-align: center;
+    padding: 2px;
+}
+.block.block_with_controls div.header div.commands a img {
+    margin-right: 3px;
+}
+.block .header .title h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    padding: 8px 0 0 10px;
+}
+.block div.block_action input,
+.block div.block_action img {
+    margin-top: 3px;
+    margin-right: 3px;
+    position: relative;
+    top: 6px;
+}
+.block div.content {
+    font-size:12px;
+    font-weight:200;
+    padding:10px 15px 15px;
+}
+#region-post .block div.content {
+    padding-left: 20px;
+}
+.block_calendar_month table.minicalendar {
+    margin-bottom: 0;
+}
+.block_calendar_month table.minicalendar.calendartable th abbr {
+    border:none !important;
+    text-decoration:none;
+}
+.block_login.block div.content div {
+    margin-bottom:9px;
+    clear:both;
+}
+.block_login.block div.content label {
+    font-size:11px;
+    display:inline-block;
+    min-width:50px;
+    margin-right:3px;
+}
+.block_myprofile div.content div.myprofileitem.picture {
+    width:105px;
+    float:left;
+}
+.block_myprofile div.myprofileitem.fullname {
+    font-size:12px;
+    font-weight:800;
+}
+.block_myprofile div.myprofileitem.edit {
+    clear:both;
+    font-weight:800;
+    font-size:12px;
+}
+.block_news_items div.content li.post {
+    margin-bottom:4px;
+    margin-top:2px;
+}
+.block_recent_activity.block_docked div.content h2.main,
+.block_recent_activity.block_docked div.content h3.main,
+.side-pre .block div.content h2.main,
+.side-post .block div.content h2.main,
+.block div.content h3.main,
+.block div.content h2 {
+    font-size: 13px;
+    color: #333;
+    font-weight: 800;
+    background: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.block.hidden div.header,
+#page-my-index h3.main {
+    border-bottom:0;
+}
+.block_comments div.content li,
+#page-course-info div.generalbox ul,
+#page-course-info div.generalbox li {
+    list-style-type:none;
+}
+.block_messages.block div.content .list a,.unlist ul.teachers li {
+    font-size:10px;
+}
+.block_myprofile div.content div,
+.block_news_items div.content div.head.clearfix,
+div.tabtree li a span,
+    .unlist ul.teachers li a {
+    font-size:11px;
+}
+.block_news_items div.content div.info,
+div.assignment.overview div.name {
+    font-weight:600;
+}

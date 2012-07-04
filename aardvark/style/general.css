@@ -1,0 +1,312 @@
+.info .name a {
+    font-weight:700;
+}
+.indent {
+    margin-left:30px;
+}
+div.subscribelink {
+    text-align:right;
+}
+.mform fieldset,fieldset.clearfix {
+    border:1px solid #dadada !important;
+    background:#f9f9f9;
+}
+.ftoggler {
+    font-size:18px;
+    color:#333;
+}
+div.notifysuccess {
+    width:80%;
+    font-size:15px;
+    color:#008500;
+    border:3px solid #dadada;
+    text-align:center;
+    background:#fff url([[pix:theme|check]]) no-repeat 2% 50%;
+    margin:0 auto;
+    padding:5px;
+}
+.generaltable .header a,
+.forumheaderlist .header a,
+th.header.questionnametext a {
+    border:none;
+    color:#333;
+    font-size:12px;
+    text-decoration:none;
+    padding:5px;
+}
+tr.r1 td {
+    background-color:#f9f9f9;
+}
+table.rolecap td,table.rolecap th {
+    border-bottom:1px solid #dadada;
+}
+table.rolecap td.risk {
+    border-left:1px solid #dadada;
+}
+ul.unlist,ul.unlist li,ul.unlist li div,ul.unlist li div ul,ul.unlist li div ul li {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+div.coursebox {
+    padding-bottom:7px !important;
+    margin-bottom:7px !important;
+    border-bottom:1px solid #eee;
+}
+div.coursebox h3.name {
+    margin-top:0;
+    margin-bottom:0;
+}
+div.coursebox h3.name a {
+    font-size:16px;
+    font-weight:400;
+}
+.unlist div.summary {
+    font-size:14px;
+    color:#666;
+    font-style:italic;
+}
+    .unlist ul.teachers {
+    display:block;
+    padding-left:5px !important;
+}
+    div.categorybox {
+    border:none !important;
+    margin-top:0;
+}
+td.category.name a {
+    padding-left:20px;
+    font-weight:400;
+    font-size:16px;
+}
+#course-index td.category.name a {
+    padding-left:0;
+    background-image:none;
+}
+table.categorylist td {
+    padding:0;
+}
+div.course_category_tree a {
+    font-size:16px;
+    font-weight:400;
+    text-decoration:none;
+}
+div.course_category_tree div.category,div.course_category_tree div.category_label,div.course_category_tree div.courses {
+    margin-bottom:8px;
+}
+div.course_category_tree div.category.with_children div.category_label {
+    background-position:0 55% !important;
+}
+div.course_category_tree div.course a {
+    font-size:14px;
+}
+div.course_category_tree div.controls {
+    font-size:10px;
+    color:#666;
+    text-transform:uppercase;
+}
+div.course_category_tree div.controls div {
+margin-top:3px;
+margin-right:10px;
+border-bottom:1px solid #dadada;
+}
+.path-course-view .course-content li.section {
+border:1px solid #e5e5e5;
+}
+.path-course-view .course-content .side {
+padding:5px 0;
+}
+#page-course-view-weeks .weekdates {
+    font-size:1em;
+    font-weight:400;
+    color:#777;
+    padding:2px;
+}
+.course-content .current {
+    background:#ffc;
+}
+.course-content .main .content {
+    background:#fff;
+    padding:10px;
+}
+span.completionprogress {
+    font-size:11px;
+    font-weight:200;
+}
+div.assignment.overview {
+    margin-bottom:5px;
+    padding-bottom:3px;
+    border-bottom:1px dashed #dadada;
+}
+div.assignment.overview div {
+display:block ;
+float:none;
+width:100%;
+}
+#page-my-index div.coursebox {
+border-bottom:none;
+}
+table.glossarycategoryheader h2.main {
+text-align:center;
+margin-bottom:0;
+margin-top:0;
+}
+table.glossarypost {
+margin-top:0;
+width:100%;
+border-bottom:1px dashed #dadada;
+}
+table.glossarypost td.entry h3 {
+font-size:20px;
+}
+#page-mod-wiki-view h2.wiki_headingtitle {
+font-size:22px;
+font-family:Georgia, serif;
+color:#333;
+font-weight:600;
+text-align:left;
+margin-bottom:3px;
+margin-top:2px;
+}
+.content hr {
+height:1px;
+color:#dadada;
+background-color:#dadada !important;
+border:none;
+border-style:none;
+}
+div#intro {
+border:none;
+text-align:center;
+font-size:14px;
+color:#333;
+}
+div.questionbankwindow.block div.header {
+background:#f9f9f9 !important;
+}
+div.questionbankwindow.block div.header a {
+color:#333 !important;
+font-size:11px;
+}
+div.generalbox.sitetopic,div.generalbox.authsui,#page-course-info div.generalbox,#page-admin-roles-assign div.generalbox,table.roleassigntable,table.roleassigntable td,#page-blocks-private-edit div.generalbox {
+border:none;
+max-width:100%;
+}
+div.generalbox.firstpageoptions h3.main {
+font-size:16px;
+}
+div.redirectmessage {
+width:60%;
+border:none;
+font-size:13px;
+background:#fff url([[pix:theme|ajax-loader]]) no-repeat 50% 100%;
+margin:10px auto 0;
+padding:20px;
+}
+div.box.errorbox {
+border:1px solid #dadada;
+color:red;
+background:#fff url([[pix:theme|error]]) no-repeat 1% 3%;
+padding:10px;
+}
+#page-mod-page-view div.generalbox {
+border-left:none;
+border-right:none;
+border-top:none;
+}
+div#tablecontainer {
+margin-bottom:10px;
+}
+div.course-content div.availabilityinfo {
+font-size:11px;
+font-style:italic;
+border-bottom:1px dashed #dadada;
+margin-bottom:10px;
+padding:2px;
+}
+#page-course-info h2.main {
+line-height:5px;
+margin-bottom:5px;
+}
+.singlebutton {
+margin:0 !important;
+}
+#page-admin-index .adminwarning {
+border:1px solid #ccc48d;
+background:#fff9d0;
+}
+.region-content img {
+max-width:540px;
+height:auto;
+}
+.box select {
+max-width:300px;
+font-size:10px;
+overflow:scroll;
+}
+.boxwidthnarrow {
+width:30%;
+}
+.boxwidthnormal {
+width:50%;
+}
+.boxwidthwide {
+width:95%;
+}
+.headermenu {
+display:none;
+}
+#page-mod-quiz-edit div.quizcontents {
+    clear: left;
+    display: block;
+    float: left;
+    width: 68%;
+}
+#id_summary_editor {
+    width: 100%;
+}
+/* Micelanious
+-------------------------*/
+div.yui3-widget-bd a,
+.tabtree li a,
+.block div.content a,
+.unlist a,
+.categorybox a,
+.course_category_tree a,
+.section a {
+    color: #333;
+}
+#page-course-info h2.main,
+h3.sectionname,
+h2.main a,
+h3.main a,
+div.loginpanel h2,
+div.signuppanel h2,
+div.hd h3.main {
+    font-size:16px;
+    background:none;
+}
+
+/* COMMAND ICONS
+-----------------*/
+img.iconsmall,
+.block.block_with_controls div.header div.commands a img,
+.course-content ul.topics li.section .right img.icon,
+.course-content ul.topics li.section .left img.icon {
+    height: 15px;
+    margin: 2px;
+    width: 15px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding:1px;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* REPORT & ADMIN LAYOUTS
+-------------------------*/
+.pagelayout-admin .no-overflow,
+.pagelayout-report .no-overflow {
+    overflow: auto;
+}
