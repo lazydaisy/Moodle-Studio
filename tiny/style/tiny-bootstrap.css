@@ -3020,7 +3020,7 @@ button.close {
   -webkit-appearance: none;
 }
 
-.btn, .button, .singlebutton {
+.btn, .button {
   display: inline-block;
   *display: inline;
   padding: 4px 14px;
@@ -3179,8 +3179,7 @@ input[type="button"].btn-block {
 }
 
 .btn,
-.button,
-.singlebutton {
+.button {
   border-color: #c5c5c5;
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
 }

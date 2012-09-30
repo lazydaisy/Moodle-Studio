@@ -29,4 +29,5 @@ $string['region-side-pre'] = 'Left side';
 $string['contact'] = 'Contact us';
 $string['about'] = 'About us';
 
+
 $string['choosereadme'] = 'Tiny is a special theme built using Twitter Bootstrap 0.2 with only basic responsive grid scafolding layout, which is based on 960 Grid System (960.gs), and combined with javascript plugins, typography, form controls, and more. Tiny is, however, only intended as a starting point for other themes to build upon.  It is not recommend to actually choose this theme for production sites!';

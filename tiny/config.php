@@ -27,7 +27,7 @@ $THEME->name = 'tiny';
 
 $THEME->parents = array('base');
 
-$THEME->sheets = array('tiny-core', 'tiny-bootstrap', 'tiny-dock', 'tiny-layout', 'tiny-bootstrap-responsive');
+$THEME->sheets = array('tiny-bootstrap', 'tiny-layout', 'tiny-core', 'tiny-dock', 'tiny-bootstrap-responsive');
 
 $THEME->parents_exclude_sheets = array('base'=>array('pagelayout'));
 
@@ -65,7 +65,7 @@ $THEME->layouts = array(
     ),
     // The site home page.
     'frontpage' => array(
-        'file' => 'default.php',
+        'file' => 'frontpage.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),

@@ -34,6 +34,19 @@ h3.name,
     width: 100%;
     margin: 0 auto;
 }
+#page-header {
+    height: 50px;
+    width: 100%;
+}
+#region-main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.region-content {
+    margin: 0;
+    padding: 0 10px;
+}
 
 /* Parent theme override
 -------------------------*/
@@ -58,8 +71,15 @@ table.minicalendar {
     border-radius: 10px;
     background-color: #FCFCFC;
     border-color: #DDD;
+form#login .rememberpass }
+    margin: 0 auto;
+    width: 20%;
+    height: 20px;
 }
-.rememberpass { display: block; width: 25%; margin: 5px auto;}
+form#login .rememberpass input#rememberusername {
+    float: left;
+    width: 20px;
+}
 /* Course view
 -------------------------*/
 .path-course-view .weeks .current,
@@ -128,4 +148,64 @@ img.iconsmall,
     background-position: 50% 50%;
     border: 0 none;
     height: 21px;
+}
+/* Buttons
+-------------------------*/
+#fgroup_id_buttonar input#id_submitbutton,
+#fgroup_id_buttonar input#id_cancel,
+fieldset legend.ftoggler,
+.buttons .singlebutton input,
+.form-buttons input,
+.continuebutton form input {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 14px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: #003366;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #aabbcc;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#aabbcc));
+  background-image: -webkit-linear-gradient(top, #ffffff, #aabbcc);
+  background-image: -o-linear-gradient(top, #ffffff, #aabbcc);
+  background-image: linear-gradient(to bottom, #ffffff, #aabbcc);
+  background-image: -moz-linear-gradient(top, #ffffff, #aabbcc);
+  background-repeat: repeat-x;
+  border: 1px solid #aabbcc;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin: 20px 5px;
+    padding: 10px;
+}
+
+/* Fieldset
+-------------------------*/
+fieldset legend.ftoggler {
+    border: 1px solid #abc;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 5px 14px;
+    width: auto;
+}
+.mform fieldset {
+    border-radius: 6px;
+    border: 1px solid #abc;
 }
