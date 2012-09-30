@@ -1,0 +1,131 @@
+/* Core Styles
+-------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #FFF url([[pix:theme|basebg]]) fixed;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #036;
+}
+a:hover {
+    color: #c06;
+}
+a:active {
+    color: #039;
+}
+a:focus {
+    border-bottom: 1px solid #039;
+}
+h1, h2, h3,
+h1.main, h2.main, h3.main,
+h2.headingblock,
+h3.name,
+.block .header .title h2 {
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    color: #abc;
+}
+
+#page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Parent theme override
+-------------------------*/
+.generalbox,
+.forumpost,
+.block {
+    border: 0 none;
+}
+footer,
+.pageinfo,
+.purgecaches {
+    text-align: center;
+}
+.purgecaches {
+    margin: 10px 0 0;
+}
+categoryboxcontent,
+.coursebox,
+.notifyproblem,
+.notifysuccess,
+table.minicalendar {
+    border-radius: 10px;
+    background-color: #FCFCFC;
+    border-color: #DDD;
+}
+.rememberpass { display: block; width: 25%; margin: 5px auto;}
+/* Course view
+-------------------------*/
+.path-course-view .weeks .current,
+.path-course-view .topics .current,
+.path-course-view .current td.side {
+    background: none repeat scroll 0 0 #003366;
+}
+.coursebox .summary,
+.coursebox .info {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+/* Theme Selector
+----------------------------*/
+#page-admin-theme-index .generalbox {
+    border: none;
+}
+.theme_screenshot {
+    float: left;
+    width: 300px;
+}
+.theme_screenshot img {
+    width: 275px;
+}
+.theme_screenshot h2 {
+    font-size: 2em;
+}
+.theme_screenshot h3 {
+    font-size: 0.9em;
+    margin: 1em 0 0;
+}
+.theme_screenshot p {
+    font-size: 0.9em;
+    margin: 0 0 1em;
+}
+.theme_description {
+    margin-left: 300px;
+}
+.theme_description h2 {
+    padding-top: 0.5em;
+}
+/* COMMAND ICONS (2011-10-13)
+-------------------------------------*/
+img.iconsmall,
+.block.block_with_controls div.header div.commands a img,
+.course-content ul.topics li.section .right img,
+.course-content ul.topics li.section .left img {
+    height:15px;
+    margin:2px;
+    width:15px;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding:1px;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+/* Blocks
+-------------------------*/
+.block_settings .content #settingsnav.box ul.block_tree li.type_unknown hr,
+.block_settings .content #settingsnav.box ul.block_tree li.type_setting hr,
+.block_settings .content #settingsnav.box ul.block_tree li.type_setting hr {
+    background-image:  url([[pix:theme|curly]]);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 0 none;
+    height: 21px;
+}
