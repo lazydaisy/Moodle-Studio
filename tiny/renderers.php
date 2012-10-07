@@ -40,11 +40,11 @@ class theme_tiny_core_renderer extends core_renderer {
         }
         if (!empty($CFG->debugvalidators)) {
             // NOTE: this is not a nice hack, $PAGE->url is not always accurate and $FULLME neither, it is not a bug if it fails. --skodak
-            $output .= '<div class="validators"><ul class="nav nav-pills">
-              <li><a href="http://validator.w3.org/check?verbose=1&amp;ss=1&amp;uri=' . urlencode(qualified_me()) . '">Validate HTML</a></li>
-              <li><a href="http://www.contentquality.com/mynewtester/cynthia.exe?rptmode=-1&amp;url1=' . urlencode(qualified_me()) . '">Section 508 Check</a></li>
-              <li><a href="http://www.contentquality.com/mynewtester/cynthia.exe?rptmode=0&amp;warnp2n3e=1&amp;url1=' . urlencode(qualified_me()) . '">WCAG 1 (2,3) Check</a></li>
-            </ul></div>';
+            $output .= '<div class="validators"><ul>
+              <li><a class="btn btn-small btn-info" href="http://validator.w3.org/check?verbose=1&amp;ss=1&amp;uri=' . urlencode(qualified_me()) . '"><i class="icon-cog icon-white"></i>&nbsp;&nbsp;Validate HTML</a></li>
+              <li><a class="btn btn-small btn-info" href="http://www.contentquality.com/mynewtester/cynthia.exe?rptmode=-1&amp;url1=' . urlencode(qualified_me()) . '"><i class="icon-cog icon-white"></i>&nbsp;&nbsp;Section 508 Check</a></li>
+              <li><a class="btn btn-small btn-info" href="http://www.contentquality.com/mynewtester/cynthia.exe?rptmode=0&amp;warnp2n3e=1&amp;url1=' . urlencode(qualified_me()) . '"><i class="icon-cog icon-white"></i>&nbsp;&nbsp;WCAG 1 (2,3) Check</a></li>
+            </ul><br /></div>';
         }
         if (!empty($CFG->additionalhtmlfooter)) {
             $output .= "\n".$CFG->additionalhtmlfooter;
@@ -77,7 +77,7 @@ class theme_tiny_core_renderer extends core_renderer {
                         get_string('home') . '</a></div>';
 
             } else {
-                return '<div class="homelink"><a href="' . $CFG->wwwroot . '/course/view.php?id=' . $this->page->course->id . '">' .
+                return '<div class="homelink"><a class="btn btn-small" href="' . $CFG->wwwroot . '/course/view.php?id=' . $this->page->course->id . '"><i class="icon-home"></i>&nbsp;&nbsp;' .
                         format_string($this->page->course->shortname, true, array('context' => $this->page->context)) . '</a></div>';
             }
         }
@@ -189,5 +189,65 @@ class theme_tiny_core_renderer extends core_renderer {
 
         return $loggedinas;
     }
+
+     /**
+     * Redirects the user by any means possible given the current state
+     *
+     * This function should not be called directly, it should always be called using
+     * the redirect function in lib/weblib.php
+     *
+     * The redirect function should really only be called before page output has started
+     * however it will allow itself to be called during the state STATE_IN_BODY
+     *
+     * @param string $encodedurl The URL to send to encoded if required
+     * @param string $message The message to display to the user if any
+     * @param int $delay The delay before redirecting a user, if $message has been
+     *         set this is a requirement and defaults to 3, set to 0 no delay
+     * @param boolean $debugdisableredirect this redirect has been disabled for
+     *         debugging purposes. Display a message that explains, and don't
+     *         trigger the redirect.
+     * @return string The HTML to display to the user before dying, may contain
+     *         meta refresh, javascript refresh, and may have set header redirects
+     */
+    public function redirect_message($encodedurl, $message, $delay, $debugdisableredirect) {
+        global $CFG;
+        $url = str_replace('&amp;', '&', $encodedurl);
+
+        switch ($this->page->state) {
+            case moodle_page::STATE_BEFORE_HEADER :
+                // No output yet it is safe to delivery the full arsenal of redirect methods
+                if (!$debugdisableredirect) {
+                    // Don't use exactly the same time here, it can cause problems when both redirects fire at the same time.
+                    $this->metarefreshtag = '<meta http-equiv="refresh" content="'. $delay .'; url='. $encodedurl .'" />'."\n";
+                    $this->page->requires->js_function_call('document.location.replace', array($url), false, ($delay + 3));
+                }
+                $output = $this->header();
+                break;
+            case moodle_page::STATE_PRINTING_HEADER :
+                // We should hopefully never get here
+                throw new coding_exception('You cannot redirect while printing the page header');
+                break;
+            case moodle_page::STATE_IN_BODY :
+                // We really shouldn't be here but we can deal with this
+                debugging("You should really redirect before you start page output");
+                if (!$debugdisableredirect) {
+                    $this->page->requires->js_function_call('document.location.replace', array($url), false, $delay);
+                }
+                $output = $this->opencontainers->pop_all_but_last();
+                break;
+            case moodle_page::STATE_DONE :
+                // Too late to be calling redirect now
+                throw new coding_exception('You cannot redirect after the entire page has been generated');
+                break;
+        }
+        $output .= $this->notification($message, 'redirectmessage');
+        $output .= '<div class="continuebutton"><a class="btn btn-small btn-info" href="'. $encodedurl .'">'. get_string('continue') .'&nbsp;&nbsp;<i class="icon-forward icon-white"></i></a></div>';
+        if ($debugdisableredirect) {
+            $output .= '<p><strong>Error output, so disabling automatic redirect.</strong></p>';
+        }
+        $output .= $this->footer();
+        return $output;
+    }
+
 
 }

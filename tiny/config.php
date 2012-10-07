@@ -27,7 +27,7 @@ $THEME->name = 'tiny';
 
 $THEME->parents = array('base');
 
-$THEME->sheets = array('tiny-bootstrap', 'tiny-layout', 'tiny-core', 'tiny-dock', 'tiny-bootstrap-responsive');
+$THEME->sheets = array('tiny-bootstrap', 'tiny-layout', 'tiny-core', 'tiny-dock', 'tiny-bootstrap-responsive', 'tiny-settings');
 
 $THEME->parents_exclude_sheets = array('base'=>array('pagelayout'));
 
@@ -65,7 +65,7 @@ $THEME->layouts = array(
     ),
     // The site home page.
     'frontpage' => array(
-        'file' => 'frontpage.php',
+        'file' => 'default.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
@@ -152,4 +152,4 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
 $THEME->csspostprocess = 'tiny_process_css';
 
-$THEME->javascripts_footer = array('jquery-1.8.2.min', 'bootstrap.min');
+$THEME->javascripts_footer = array('jquery-1.8.2.min','bootstrap-dropdown', 'bootstrap-collapse');

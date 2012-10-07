@@ -23,11 +23,17 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['about'] = 'About us';
+$string['contact'] = 'Contact us';
+$string['customcss'] = 'Custom CSS';
+$string['customcssdesc'] = 'This area is specifically for CSS. Do NOT enter HTML or PHP.<br />For Example|: .sitelink {display: none;} /* disables Moodle logo in footer */';
+$string['font'] = '@Font-Face URL';
+$string['fontdesc'] = 'Enter the URL for your custom font.';
+$string['fontface'] = '@Font-Face font-family';
+$string['fontfacedesc'] = 'Enter the name of the font-family here.(This will be the name of the font you want to embed)';
 $string['pluginname'] = 'Tiny';
 $string['region-side-post'] = 'Right side';
 $string['region-side-pre'] = 'Left side';
-$string['contact'] = 'Contact us';
-$string['about'] = 'About us';
 
 
 $string['choosereadme'] = 'Tiny is a special theme built using Twitter Bootstrap 0.2 with only basic responsive grid scafolding layout, which is based on 960 Grid System (960.gs), and combined with javascript plugins, typography, form controls, and more. Tiny is, however, only intended as a starting point for other themes to build upon.  It is not recommend to actually choose this theme for production sites!';

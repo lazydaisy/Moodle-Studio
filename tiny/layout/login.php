@@ -87,7 +87,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="tiny-navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -106,7 +106,9 @@ echo $OUTPUT->doctype() ?>
       </div>
     </div>
 
-    <div class="container">
+    <div id="page-header"></div>
+
+<div class="container">
 
       <!-- Main default unit for a primary marketing message or call to action -->
       <div class="default-unit">
@@ -120,21 +122,28 @@ echo $OUTPUT->doctype() ?>
 
       <hr>
 
-      <footer>
+<footer>
+    <?php if ($hasfootnote) { ?>
+    <div id="footnote"><?php echo $PAGE->theme->settings->footnote;?></div>
+    <?php } ?>
+
+    <?php include('navbarlogin.php'); ?>
+</footer>
+
+<!-- START OF FOOTER -->
+    <?php if ($hasfooter) { ?>
+    <div id="page-footer">
         <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
-
-                <?php if ($hasfootnote) { ?>
-                        <div id="footnote"><?php echo $PAGE->theme->settings->footnote;?></div>
-                <?php } ?>
-
-                <?php
-                echo $OUTPUT->home_link();
-                echo $OUTPUT->standard_footer_html();
+        <?php
+        echo $OUTPUT->home_link();
+        echo $OUTPUT->standard_footer_html();
         ?>
-      </footer>
+    </div>
+    <?php } ?>
+
 
     </div> <!-- /container -->
-
+</div>
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
 </html>

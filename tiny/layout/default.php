@@ -57,8 +57,6 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <meta charset="utf-8" />
      <!-- Le Google font -->
-    <link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css' />
-
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -84,8 +82,8 @@ echo $OUTPUT->doctype() ?>
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
-<div id="page">
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="tiny-navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -123,65 +121,80 @@ echo $OUTPUT->doctype() ?>
               </li>
             </ul>
 
-            <?php include('navbarlogin.php'); ?>
+            <?php include('loginout.php'); ?>
 
          </div><!--/.nav-collapse -->
         </div>
       </div>
+    </div> <!-- /container-fluid (1) -->
+
+<!-- container fluid (2) -->
+<div class="container-fluid">
+
+<?php include('header.php'); ?>
+
+<!-- navbar - breadcrumb -->
+
+<?php if ($hasnavbar) { ?>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></div>
+        <div class="navbutton"> <?php echo $PAGE->button; ?></div>
+    </div>
+<?php } ?>
+
+<!-- row 1 - main-content -->
+
+ <div class="tiny-row-fluid">
+    <?php if ($hassidepre) { ?>
+    <div id="region-pre" class="block-region span3 left">
+        <div class="region-content">
+            <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+        </div>
+    </div>
+    <?php } ?>
+
+
+    <div id="region-main" class="span6">
+      <div class="region-content">
+        <?php echo $OUTPUT->main_content(); ?>
+      </div>
     </div>
 
-    <div id="page-header"></div>
+    <?php if ($hassidepost) { ?>
+    <div id="region-post" class="block-region span3 right">
+        <div class="region-content">
+            <?php echo $OUTPUT->blocks_for_region('side-post') ?>
+        </div>
+    </div>
+    <?php } ?>
 
-    <div class="container-fluid">
-
-      <!-- row 1 -->
-
-             <div class="tiny-row-fluid">
-              <div class="span3 left" >
-                <?php if ($hassidepre) { ?>
-                <div id="region-pre" class="block-region">
-                    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
-                    </div>
-                </div>
-                <?php } ?>
-              </div>
-              <div class="span6">
-                <div id="region-main">
-                  <div class="region-content">
-                    <?php echo $OUTPUT->main_content(); ?>
-                  </div>
-                </div>
-              </div>
-              <div class="span3 right">
-                <?php if ($hassidepost) { ?>
-                <div id="region-post" class="block-region">
-                    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('side-post') ?>
-                    </div>
-                </div>
-                <?php } ?>
-              </div>
-            </div>
-      <!-- end row 1 -->
-
-      <hr>
- <div id="page-footer"></div>
-      <footer>
-        <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
-
-                <?php if ($hasfootnote) { ?>
-                        <div id="footnote"><?php echo $PAGE->theme->settings->footnote;?></div>
-                <?php } ?>
-
-                <?php
-                include('navbarlogin.php');
-                echo $OUTPUT->standard_footer_html();
-        ?>
-      </footer>
-
-    </div> <!-- /container -->
 </div>
+<!-- end row 1 -->
+
+<hr>
+
+<!-- START OF FOOTER -->
+    <?php if ($hasfooter) { ?>
+    <div id="page-footer">
+        <footer>
+        <?php if ($hasfootnote) { ?>
+            <div id="footnote"><?php echo $PAGE->theme->settings->footnote;?></div>
+        <?php } ?>
+        </footer>
+
+
+        <?php echo $OUTPUT->home_link(); ?>
+        <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
+        <?php include('navbarlogin.php'); ?>
+
+        <?php echo $OUTPUT->standard_footer_html(); ?>
+
+    </div>
+    <?php } ?>
+
+
+</div> <!-- /container fluid (2)-->
+
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
 </html>

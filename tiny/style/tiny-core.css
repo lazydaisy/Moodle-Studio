@@ -25,27 +25,62 @@ h1.main, h2.main, h3.main,
 h2.headingblock,
 h3.name,
 .block .header .title h2 {
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
+    font-family: sans-serif;
+    font-weight: bold;
     color: #abc;
+}
+h1.headermain {
+    background:  url([[pix:theme|img/icon-m]]) left top no-repeat;
+    padding-left: 50px;
+    font-size: 50px;
 }
 
 #page {
     width: 100%;
     margin: 0 auto;
+    font-family: Mordred;
 }
 #page-header {
     height: 50px;
     width: 100%;
 }
-#region-main {
+#page-site-index #page-header {
+    min-height: 50px;
+    height: auto;
     width: 100%;
+}
+#page-site-index #page-header h1 {
+    font-family: Mordred;
+}
+#region-main {
     margin: 0;
     padding: 0;
 }
 .region-content {
     margin: 0;
     padding: 0 10px;
+}
+
+.block .header {
+    padding: 0;
+    background-color: #abc;
+    border-radius: 0 0 6px 6px;
+}
+
+.block .header .title h2 {
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 120%;
+}
+
+/* Language Menu
+-------------------------*/
+select.menulang {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    width: 125px;
+    font-size: 1em;
 }
 
 /* Parent theme override
@@ -71,27 +106,41 @@ table.minicalendar {
     border-radius: 10px;
     background-color: #FCFCFC;
     border-color: #DDD;
-form#login .rememberpass }
-    margin: 0 auto;
-    width: 20%;
-    height: 20px;
 }
-form#login .rememberpass input#rememberusername {
+/* Login
+-------------------------*/
+div.rememberpass {
+    margin: 20px auto;
+    width: 160px;
+}
+.rememberpass input {
     float: left;
-    width: 20px;
+}
+.rememberpass label {
+    float: left;
+    margin-left: 5px;
+}
+.loginpanel h2 {
+    color: white;
 }
 /* Course view
 -------------------------*/
 .path-course-view .weeks .current,
 .path-course-view .topics .current,
 .path-course-view .current td.side {
-    background: none repeat scroll 0 0 #003366;
+    background: none;
+    background-color: #aabbcc;
+    border-radius: 6px;
+    color: white;
 }
 .coursebox .summary,
 .coursebox .info {
     float: left;
     text-align: left;
     width: 100%;
+}
+h3.sectionname {
+    color: white;
 }
 /* Theme Selector
 ----------------------------*/
@@ -151,11 +200,16 @@ img.iconsmall,
 }
 /* Buttons
 -------------------------*/
+
+.redirectmessage .continuebutton,
 #fgroup_id_buttonar input#id_submitbutton,
 #fgroup_id_buttonar input#id_cancel,
 fieldset legend.ftoggler,
 .buttons .singlebutton input,
+.navbutton .singlebutton input,
 .form-buttons input,
+.guestform input,
+.loginform .form-input input#loginbtn,
 .continuebutton form input {
   display: inline-block;
   *display: inline;
@@ -195,6 +249,30 @@ fieldset legend.ftoggler,
     margin: 20px 5px;
     padding: 10px;
 }
+.loginform .form-input input#loginbtn {
+    margin: 0;
+    padding: 5px;
+}
+
+.notifysuccess {
+  *background-color: #499249;
+  background-color: #51a351;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
 
 /* Fieldset
 -------------------------*/
@@ -208,4 +286,117 @@ fieldset legend.ftoggler {
 .mform fieldset {
     border-radius: 6px;
     border: 1px solid #abc;
+}
+
+/* Bootstrap Override
+-------------------------*/
+.descriptionbox table.list {
+    border: 1px solid #abc;
+}
+
+.descriptionbox table.list tbody,
+.descriptionbox table.list tbody tr th.label {
+    background-color: #fff;
+}
+.descriptionbox table.list tbody tr th.label {
+    border-right: 5px solid #abc;
+    margin: 3px 0;
+    color: #036;
+}
+.descriptionbox table.list tbody tr td {
+    border-bottom: 1px dashed #abc;
+}
+/*
+Modules: Calendar
+-----------------------*/
+
+/** Calendar **/
+.calendartable {width: 100%; font-size: 100%;}
+.calendartable th,
+.calendartable td {width:14%;vertical-align:top;text-align: center;border-width:0px;}
+
+.path-calendar .calendar-controls .previous,
+.path-calendar .calendar-controls .next,
+.path-calendar .calendar-controls .current {display: block;float: left;width: 12%;}
+.path-calendar .calendar-controls .previous {text-align: left;}
+.path-calendar .calendar-controls .current {text-align: center;width: 76%;}
+.path-calendar .calendar-controls .next {text-align: right;}
+
+.path-calendar {}
+.path-calendar .maincalendar {vertical-align: top;padding:0;}
+.path-calendar .maincalendar .bottom {text-align: center;padding:5px 0 0 0;}
+.path-calendar .maincalendar .heightcontainer {height: 100%;position: relative;}
+.path-calendar .maincalendar .calendarmonth {width:98%;margin:10px auto;}
+.path-calendar .maincalendar .calendarmonth ul {margin:0;}
+.path-calendar .maincalendar .calendarmonth ul li {list-style-type:none;margin-top: 4px;}
+.path-calendar .maincalendar .calendarmonth td {height: 5em;}
+.path-calendar .maincalendar .calendar-controls .previous,
+.path-calendar .maincalendar .calendar-controls .next{width: 30%;}
+.path-calendar .maincalendar .calendar-controls .current {width: 39.95%;}
+.path-calendar .maincalendar .controls {width:98%;margin:10px auto;}
+.path-calendar .maincalendar .eventlist .event {width:100%;margin-bottom:10px;border-spacing:0px;border-collapse:separate;border-width:1px;border-style:solid;}
+.path-calendar .maincalendar .eventlist .event .topic .name {float:left;}
+.path-calendar .maincalendar .eventlist .event .topic .date {float:right;}
+.path-calendar .maincalendar .eventlist .event .course {float:left;clear:left;}
+.path-calendar .maincalendar .eventlist .event .side {width:32px;}
+.path-calendar .maincalendar .header {overflow:hidden;}
+.path-calendar .maincalendar .header .buttons {float: right;}
+.path-calendar .filters table {border-collapse:separate;border-spacing: 2px;width: 100%;}
+#page-calendar-export .indent {padding-left: 20px;}
+
+.block .minicalendar {width:100%;margin:10px auto;}
+.block .minicalendar th,
+.block .minicalendar td {padding:2px;font-size: 10px;}
+.block .minicalendar td.weekend {color:#A00;}
+.block .calendar-controls .previous {text-align: left;display: block;float: left;width: 12%;}
+.block .calendar-controls .current {float:left;text-align: center;display: block;width:76%;}
+.block .calendar-controls .next {text-align: right;display: block;float: left;width: 12%;}
+.block .filters table {border-collapse:separate;border-spacing: 2px;padding: 2px;width: 100%;}
+.block .content h3.eventskey {margin-top:0.5em;margin-bottom:0;margin-left:0.5em;}
+
+/*
+Colors for Calendar Events
+-----------------------*/
+
+#calendar .event_global,
+.minicalendar .event_global,
+.block_calendar_month .event_global {
+  border-color:#def2ba !important;
+  background-color:#def2ba;
+}
+
+#calendar .event_course,
+.minicalendar .event_course,
+.block_calendar_month .event_course {
+  border-color:#c6dfeb !important;
+  background-color:#c6dfeb;
+}
+
+#calendar .event_group,
+.minicalendar .event_group,
+.block_calendar_month .event_group {
+  border-color:#feffc2 !important;
+  background-color:#feffc2;
+}
+
+#calendar .event_user,
+.minicalendar .event_user,
+.block_calendar_month .event_user {
+  border-color:#d9c6e2 !important;
+  background-color:#d9c6e2;
+}
+
+table.minicalendar tr td.weekend {
+  color: #f00;
+  }
+
+/* Redirect
+-------------------------*/
+.redirectmessage {
+    font-size: 14pt;
+    color: #036;
+    padding-bottom: 10px;
+}
+.redirectmessage, .continuebutton {
+    text-align: center;
 }

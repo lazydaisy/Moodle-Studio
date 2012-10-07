@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   theme_aardvard_postit
+ * @package   theme_tiny
  * @copyright 2012 Mary Evans
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
