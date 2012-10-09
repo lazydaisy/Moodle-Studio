@@ -23,6 +23,7 @@
  */
 
 $hasheading = ($PAGE->heading);
+$hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasheader = (empty($PAGE->layout_options['noheader']));
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
 $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));
@@ -54,31 +55,26 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
-  <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+     <!-- Le Google font -->
     <title>Bootstrap, from Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-    <!-- Le styles -->
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('ico/favicon', 'theme');?> ">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-144-precomposed', 'theme'); ?>">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-114-precomposed', 'theme'); ?>">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-72-precomposed', 'theme'); ?>">
-    <link rel="apple-touch-icon-precomposed" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-57-precomposed', 'theme'); ?>">
+    <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('ico/favicon', 'theme'); ?>" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-144-precomposed', 'theme'); ?>" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-114-precomposed', 'theme'); ?>" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-72-precomposed', 'theme'); ?>" />
+    <link rel="apple-touch-icon-precomposed" href="<?php echo $OUTPUT->pix_url('ico/apple-touch-icon-57-precomposed', 'theme'); ?>" />
+
 
     <?php echo $OUTPUT->standard_head_html() ?>
 </head>
@@ -89,61 +85,110 @@ echo $OUTPUT->doctype() ?>
 
     <div class="tiny-navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="<?php echo $CFG->wwwroot; ?>">The Tiny Project</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="<?php echo $CFG->wwwroot; ?>"><i class="icon-home icon-white"></i> <?php echo get_string('home'); ?></a></li>
+              <li><a href="<?php echo $CFG->wwwroot; ?>"><i class="icon-home icon-white"></i> <?php echo get_string('home'); ?></a></li>
               <li><a href="mailto:your-email@address"><i class="icon-envelope icon-white"></i> <?php echo get_string('contact', 'theme_tiny'); ?></a></li>
+              <li class="dropdown">
+              <?php
+          if (isloggedin() || isguestuser()) { ?>
+                <a href="<?php echo $CFG->wwwroot.'/user/view.php?id='.$USER->id.'&amp;course='.$COURSE->id;?>" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> <?php echo $USER->firstname.'&nbsp;'.$USER->lastname; ?>&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="<?php echo $CFG->wwwroot ?>/my/"><i class="icon-tasks"></i> <?php echo get_string('mycourses'); ?></a></li>
+                  <li><a href="#"><i class="icon-briefcase"></i> My private files</a></li>
+                  <li><a href="#"><i class="icon-edit"></i> Edit my profile</a></li>
+                  <?php
+          } else { ?>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-leaf icon-white"></i> <?php echo get_string('about','theme_tiny'); ?><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                  <?php
+          } ?>
+                </ul>
+              </li>
             </ul>
-           </div><!--/.nav-collapse -->
+
+            <?php include('loginout.php'); ?>
+
+         </div><!--/.nav-collapse -->
         </div>
       </div>
+    </div> <!-- /container-fluid (1) -->
+
+<!-- container fluid (2) -->
+<div class="container-fluid">
+
+<div class="default-unit">
+
+<!-- navbar - breadcrumb -->
+
+<?php if ($hasnavbar) { ?>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></div>
+        <div class="navbutton"> <?php echo $PAGE->button; ?></div>
     </div>
+<?php } ?>
 
-    <div id="page-header"></div>
+<!-- row 1 - main-content -->
 
-<div class="container">
+ <div class="tiny-row-fluid">
 
-      <!-- Main default unit for a primary marketing message or call to action -->
-      <div class="default-unit">
-
-      <!-- Example row of columns -->
-            <div class="tiny-row">
-               <?php echo $OUTPUT->main_content(); ?>
-            </div>
-      <!-- end row 1 -->
-      </div>
-
-      <hr>
-
-<footer>
-    <?php if ($hasfootnote) { ?>
-    <div id="footnote"><?php echo $PAGE->theme->settings->footnote;?></div>
+    <?php if ($hassidepre) { ?>
+    <div class="span3 left">
+        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+    </div>
     <?php } ?>
 
-    <?php include('navbarlogin.php'); ?>
-</footer>
+    <div class="span6">
+        <?php echo $OUTPUT->main_content(); ?>
+    </div>
+
+    <?php if ($hassidepost) { ?>
+    <div class="span3 right">
+        <?php echo $OUTPUT->blocks_for_region('side-post') ?>
+    </div>
+    <?php } ?>
+
+</div>
+<!-- end row 1 -->
+</div>
+<hr>
 
 <!-- START OF FOOTER -->
     <?php if ($hasfooter) { ?>
     <div id="page-footer">
+        <footer>
+        <?php if ($hasfootnote) { ?>
+            <div id="footnote"><?php echo $PAGE->theme->settings->footnote;?></div>
+        <?php } ?>
+        </footer>
+
+
+        <?php echo $OUTPUT->home_link(); ?>
         <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
-        <?php
-        echo $OUTPUT->home_link();
-        echo $OUTPUT->standard_footer_html();
-        ?>
+        <?php include('navbarlogin.php'); ?>
+
+        <?php echo $OUTPUT->standard_footer_html(); ?>
+
     </div>
     <?php } ?>
 
 
-    </div> <!-- /container -->
-</div>
+</div> <!-- /container fluid (2)-->
+
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
 </html>

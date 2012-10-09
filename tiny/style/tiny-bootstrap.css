@@ -398,8 +398,7 @@ a:hover {
   width: 31.914893617021278%;
   *width: 31.861702127659576%;
 }
-.tiny-row-fluid .span3.left,
-.tiny-row-fluid .span3.right,
+
 .tiny-row-fluid .span3 {
   width: 23.404255319148934%;
   *width: 23.351063829787233%;
@@ -5737,11 +5736,10 @@ a.badge:hover {
 
 .default-unit h1 {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1;
   letter-spacing: -1px;
   color: white;
-  font-family: "UnifrakturMaguntia", serif;
   font-weight: 400;
 }
 

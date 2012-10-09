@@ -38,6 +38,7 @@ $THEME->layouts = array(
     'base' => array(
         'file' => 'default.php',
         'regions' => array(),
+        'options' => array('noheader'=>true),
     ),
     // Standard layout with blocks, this is recommended for most pages with default information
     'standard' => array(
@@ -79,20 +80,20 @@ $THEME->layouts = array(
     // My dashboard page
     'mydashboard' => array(
         'file' => 'default.php',
-        'regions' => array('side-post'),
-        'defaultregion' => 'side-post',
+        'regions' => array('side-pre', 'side-post'),
+        'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     // My public page
     'mypublic' => array(
         'file' => 'default.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
         'file' => 'login.php',
         'regions' => array(),
-        'options' => array('langmenu'=>true),
+        'options' => array('noheader'=>true, 'langmenu'=>true),
     ),
 
     // Pages that appear in pop-up windows - no navigation, no blocks, no header.

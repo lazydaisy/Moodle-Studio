@@ -119,7 +119,14 @@ echo $OUTPUT->doctype() ?>
           } ?>
                 </ul>
               </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-plane icon-white"></i>&nbsp;&nbsp;Language&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu lang-menu">
+                  <li class="lang-menu"><?php echo $OUTPUT->lang_menu(); ?></li>
+                </ul>
+              </li>
             </ul>
+
 
             <?php include('loginout.php'); ?>
 
@@ -145,26 +152,28 @@ echo $OUTPUT->doctype() ?>
 <!-- row 1 - main-content -->
 
  <div class="tiny-row-fluid">
+
     <?php if ($hassidepre) { ?>
-    <div id="region-pre" class="block-region span3 left">
-        <div class="region-content">
-            <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
-        </div>
+    <div class="span3 left">
+    <div id="region-pre" class="block-region">
+    <div class="region-content">
+        <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+    </div>
+    </div>
     </div>
     <?php } ?>
 
-
-    <div id="region-main" class="span6">
-      <div class="region-content">
+    <div class="span6">
         <?php echo $OUTPUT->main_content(); ?>
-      </div>
     </div>
 
     <?php if ($hassidepost) { ?>
-    <div id="region-post" class="block-region span3 right">
-        <div class="region-content">
-            <?php echo $OUTPUT->blocks_for_region('side-post') ?>
-        </div>
+    <div class="span3 right">
+    <div id="region-post" class="block-region">
+    <div class="region-content">
+        <?php echo $OUTPUT->blocks_for_region('side-post') ?>
+    </div>
+    </div>
     </div>
     <?php } ?>
 
@@ -185,7 +194,6 @@ echo $OUTPUT->doctype() ?>
 
         <?php echo $OUTPUT->home_link(); ?>
         <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
-        <?php include('navbarlogin.php'); ?>
 
         <?php echo $OUTPUT->standard_footer_html(); ?>
 

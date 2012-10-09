@@ -10,6 +10,12 @@ It is not recommend to use this theme on a production site!
 
 I almost forgot, I added some new pix core and plugin icons.
 
+UPDATE: 09 October 2012
+---------------------------------------
+
+Fixed a few more issues with respect to the layout which was casuing problems with the responsive design. All seems to be working well now.
+
+
 UPDATE: 07 October 2012
 ---------------------------------------
 
@@ -22,5 +28,4 @@ I'm quite pleased with it now as it's beginning to take shape at last.
 UPDATE: 30 September 2012
 ---------------------------------------
 
-Fixed vanishing blocks.
 Added more customization.
