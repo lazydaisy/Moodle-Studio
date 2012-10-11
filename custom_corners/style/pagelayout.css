@@ -1,0 +1,478 @@
+/* Page header
+-------------------------*/
+
+#page {
+    margin: 4%;
+    padding-top: 2px;
+    width: auto;
+}
+#page-site-index #page {
+    margin: 2% 4% 4%;
+}
+#page-header {
+    width: 98%;
+    margin: 0 1%;
+    padding: 0;
+}
+div#page-header div.btl{
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div#page-header div.btr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+div#page-header div.i1 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+}
+div#page-header div.i2 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-position: 100% 0;
+    background-color: transparent;
+    padding: 0 12px 0 0;
+}
+div#page-header div.i3 {
+    background-color: #F1ECE6;
+    padding: 10px 5px 0 5px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid none;
+    border-top-color: #F1ECE6;
+    border-bottom-color: #F1ECE6;
+}
+div#page-header div.bbl {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div#page-header div.bbr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+div#page-header div.btl{
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div#page-header div.btr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+div#page-header-i1 div.i1 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+}
+div#page-header-i2 div.i2 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-position: 100% 0;
+    background-color: transparent;
+    padding: 0 12px 0 0;
+}
+div#page-header-i3 div.i3 {
+    background-color: #F1ECE6;
+    padding: 10px 5px;
+    border: 0 none;
+    border-top: 1px solid #F1ECE6;
+    border-bottom: 1px solid #F1ECE6;
+}
+div#page-header div.i3 div.wraphome {
+    background-color: #F1ECE6;
+    border: 1px solid #F1ECE6;
+    padding: 0 10px;
+}
+div#page-header div.bbl {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div#page-header div.bbr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+/* Region main
+-------------------------*/
+#region-main {
+    margin-top: 10px;
+}
+#region-main div.btl {
+    background-image: url([[pix:theme|box]]);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+#region-main  div.btr {
+    background-image: url([[pix:theme|box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+#region-main  div.i1 {
+    background-image: url([[pix:theme|borders]]);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+}
+#region-main  div.i2 {
+    background-image: url([[pix:theme|borders]]);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-position: 100% 0;
+    background-color: transparent;
+    padding: 0 12px 0 0;
+}
+#region-main  div.i3 {
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+#region-main  div.bbl{
+    background-image: url([[pix:theme|box]]);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+#region-main  div.bbr {
+    background-image: url([[pix:theme|box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+#region-main  div.btl{
+    z-index: 10;
+}
+
+#page-header h1.headermain {
+    color: #169;
+    font-size: 180%;
+    margin: 0 0 10px;
+}
+
+/* Region content (main)
+-------------------------*/
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.btl {
+    background-image: url([[pix:theme|mask_box]])!important;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.btr {
+    background-image: url([[pix:theme|mask_box]])!important;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.i1 {
+    background-image: url([[pix:theme|mask_borders_le]])!important;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.i2 {
+    background-image: url([[pix:theme|mask_borders_re]])!important;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.i3 {
+    background-color: transparent;
+    border-color: transparent;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.bbl {
+  background-image:  url([[pix:theme|mask_box]])!important;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.bbr {
+  background-image:  url([[pix:theme|mask_box]])!important;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block div.btl {
+  z-index: 10;
+}
+div#page-content-wrap div#page-content div#region-main-box div#region-post-box div#region-main-wrap div#region-main div.i1 div.i2 div.i3 div.region-content div.block {
+    background-image:  url([[pix:theme|info_gradient]])!important;
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    padding: 0;
+}
+
+/* Blocks
+-------------------------*/
+.block { border: 0 none}
+
+div.btr {
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    text-align: left;
+}
+div.btl {
+    font-size: 1px;
+    line-height: 1%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+}
+div.bbr {
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    text-align: left;
+}
+div.bbl {
+    font-size: 1px;
+    line-height: 1%;
+    height: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+}
+div.i1 {
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+}
+div.i2 {
+    background-repeat: repeat-y;
+    background-position: 100% 0;
+    background-color: transparent;
+}
+div.block div.btl {
+    background-image: url([[pix:theme|beige_box]]);
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div.block div.btr {
+    background-image: url([[pix:theme|beige_box]]);
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+div.block div.header div.btl {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div.block div.header div.btr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+}
+div.block div.header div.i1 {
+    background-image:  url([[pix:theme|borders]]);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+}
+div.block div.header div.i2 {
+    background-image: url([[pix:theme|borders]]);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-position: 100% 0;
+    background-color: transparent;
+    padding: 0 12px 0 0;
+}
+
+div.block div.header div.i3 {
+    padding: 0 0 5px;
+    background-color: #ffffff;
+    border-top-width: 1px;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid none;
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+div.block div.i1 {
+    background-image:  url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+}
+div.block div.i2 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-position: 100% 0;
+    background-color: transparent;
+    padding: 0 12px 0 0;
+}
+div.block div.i3 {
+    background-color: #f1ece6;
+    padding: 0;
+    border-style: none;
+    margin-top: -4px;
+}
+div.block div.bbl {
+    background-image:  url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div.block div.bbr {
+    background-color: transparent;
+    background-image: url([[pix:theme|beige_box]]);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 12px;
+    margin: 0 0 0 13px;
+}
+.block div.hidden div.header {
+    border-bottom-style: none;
+}
+
+/* Footer
+-------------------------*/
+#page-footer {
+    border-style: none;
+    font-size: 0.75em;
+    margin: 5px 1%;
+    padding: 0;
+    width: 98%;
+}
+div#page-footer div.btl {
+    background-image:  url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div#page-footer div.btr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+    text-align: left;
+}
+div#page-footer div.i1 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0 0 0 12px;
+}
+div#page-footer div.i2 {
+    background-image: url([[pix:theme|beige_borders]]);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+    background-position: 100% 0;
+    background-color: transparent;
+    padding: 0 12px 0 0;
+}
+div#page-footer div.i3 {
+    background-color: #f1ece6;
+    padding: 0 10px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #f1ece6;
+}
+div#page-footer div.bbl {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: transparent;
+    height: 12px;
+    left: -13px;
+    position: relative;
+    width: 13px;
+}
+div#page-footer div.bbr {
+    background-image: url([[pix:theme|beige_box]]);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    margin: 0 0 0 13px;
+    height: 12px;
+    background-color: transparent;
+    text-align: left;
+}
+.clrfix {
+    display: block;
+    min-width: 0;
+}
+.clrfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/** Report layout **/
+.pagelayout-report #page {width:auto;position:relative;}
+.pagelayout-report #page-header {float:none;}
+.pagelayout-report #page-content {float:none;overflow:visible;width:auto;}
+.pagelayout-report #report-main-content {float:left;width:100%;}
+.pagelayout-report #report-main-content .region-content {margin-left:200px;}
+.pagelayout-report #report-main-content .region-content table {background-color:#FFF;}
+.pagelayout-report #report-region-wrap {width:0;float:right;position:relative;left:-100%;}
+.pagelayout-report #report-region-pre {width:200px;}
+.pagelayout-report #page-footer {float:none;}
+.pagelayout-report #page-content .region-content {overflow:visible;}
