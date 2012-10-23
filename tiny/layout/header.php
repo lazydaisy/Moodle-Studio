@@ -13,17 +13,13 @@
         </div>
 
         <?php
-    } else { ?>
-
-    <div id="page-header">
-            <?php
-        if ($hasheading) { ?>
-        <h1 class="header-icon"><?php echo $PAGE->heading ?></h1>
-        <?php
-    } ?>
-        </div>
-        <?php
-    } ?>
+    } else {
+        echo '<div id="page-header">';
+    if ($hasheading) {
+        echo '<h1 class="header-icon">'.$PAGE->heading.'</h1>';
+    }
+        echo '</div>';
+} ?>
 
     <?php
 } ?>

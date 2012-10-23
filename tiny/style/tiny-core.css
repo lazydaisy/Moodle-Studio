@@ -2,7 +2,6 @@
 -------------------------*/
 html, body {
     margin: 0;
-    padding: 0;
     background: #FFF url([[pix:theme|basebg]]) fixed;
 }
 a {
@@ -37,12 +36,15 @@ li.current .content h3.sectionname {
 li#section-0 h3.sectionname{
     font-size: 300%;
 }
-h1.header-icon {
-    background:  url([[pix:theme|img/icon-m]]) left top no-repeat;
-    padding-left: 50px;
-    font-size: 300%;
-    line-height: 1.4;
+.navbar-inner .container-fluid a.logo {
+    background-image: url([[pix:theme|img/icon-m]]);
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+    height: 40px;
+    padding: 40px;
+    width: 40px;
 }
+
 .course-content {
     margin-top: -15px;
 }
@@ -116,10 +118,6 @@ footer,
 .purgecaches {
     margin: 10px 0 0;
 }
-categoryboxcontent,
-.coursebox,
-.notifyproblem,
-.notifysuccess,
 table.minicalendar {
     border-radius: 10px;
     background-color: #FCFCFC;
@@ -156,6 +154,9 @@ div.rememberpass {
     float: left;
     text-align: left;
     width: 100%;
+}
+.coursebox, .categorybox {
+    width: 92%;
 }
 
 /* Theme Selector
@@ -423,22 +424,91 @@ table.minicalendar tr td.weekend {
 #page-footer .performanceinfo {
     padding: 10px 0;
 }
-/* Custom Bootstrap CSS
--------------------------*/
-.span6 {
-    border-top: 5px solid #abc;
+/*
+Modules: Forum
+-----------------------*/
+.forumpost {
+    border-collapse:separate;
+    border-style:solid;
+    border-width:0;
+    margin-top:10px;
+    width: 100%;
+}
+.forumpost .row.maincontent {
+    background: #fff none no-repeat;
+}
+.forumpost .row.header {
+    background: #fff url([[pix:theme|forum/gradient]]) repeat-x 43px 100%;
+    border:0px;
+    min-height: 3em;
+}
+.forumpost .picture img {
+    margin: 4px 4px 0 0;
+}
+.forumpost .content .posting {
+    margin-top: 15px;
+    max-width:100%;
+    overflow:auto;
+}
+.forumpost .topic a:link,
+.forumpost .topic a:visited {
+    color: #555;
+}
+.path-mod-forum .forumheaderlist .discussion .starter {
+    border-left: 0 none;
+    vertical-align: middle;
+}
+.path-mod-forum .forumheaderlist .discussion.r1 {
+    background-color: #ededed;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #d9d9d9;
+}
+.path-mod-forum .forumheaderlist {
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    margin-top: 10px;
+    width: 100%;
+}
+.path-mod-forum .forumheaderlist th.header {
+    background-color: #abc;
+    border-bottom: 1px solid #036;
+}
+.path-mod-forum .forumheaderlist td {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px 0 0;
+}
+/*
+Grader Report
+-----------------------*/
+.user-grade td.oddd1 {
+    background-color: #def
+}
+.user-grade {
+    border: 1px solid #abc;
+}
+.user-grade td.b1l, .user-grade td.b2l {
+    border-left: 2px solid #aaa;
+}
+.user-grade td.b1b, .user-grade td.b2b {
+    border-bottom: 2px solid #aaa;
+}
+.user-grade td.b1t, .user-grade td.b2t {
+    border-top: 2px solid #369;
+}
+tr.discussion td.replies { text-align: center;}
+/*
+AJAX User Enroller Panel
+-----------------------*/
+.user-enroller-panel {
+    width:400px;
+    background-color:#666;
+    position:absolute;
+    top:10%;
+    left:10%;
+    border:1px solid #666;
+    border-width:0 5px 5px 0;
+    z-index: 99999!important;
 }
 
-li.section.main {
-    min-height: 20px;
-    padding: 19px;
-    margin-bottom: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #e3e3e3;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
+#custommenu {clear: right;}

@@ -2933,7 +2933,12 @@ table [class*=span],
           border-radius: 4px;
 }
 
-.well {
+.well,
+.categorybox,
+.coursebox,
+categoryboxcontent,
+.notifyproblem,
+.notifysuccess {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -5723,33 +5728,6 @@ a.badge:hover {
 
 .carousel-caption p {
   margin-bottom: 0;
-}
-
-.default-unit {
-  padding: 50px 30px 30px;
-  margin-bottom: 30px;
-  background-color: #aabbcc;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-
-.default-unit h1 {
-  margin-bottom: 0;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: white;
-  font-weight: 400;
-}
-
-.default-unit p {
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  color: inherit;
-  font-family: "Tempus Sans ITC", sans-serif;
-  font-style: italic;
 }
 
 .pull-right {

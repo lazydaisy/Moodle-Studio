@@ -16,7 +16,7 @@ Docking Module
     display:none;
 }
 #dock .dockeditem.firstdockitem {
-    margin-top: 3em;
+    margin-top: 60px;
     -webkit-border-top-right-radius: 6px;
     -moz-border-radius-topright: 6px;
     border-top-right-radius: 6px;

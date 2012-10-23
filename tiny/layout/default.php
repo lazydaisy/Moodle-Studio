@@ -35,8 +35,9 @@ $haslogo = (!empty($PAGE->theme->settings->logo));
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
 
-$custommenu = $OUTPUT->custom_menu();
+$custommenu = $OUTPUT->custom_menu($PAGE->theme->settings->custommenuitems);
 $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custommenu));
+
 
 $bodyclasses = array();
 if ($showsidepre && !$showsidepost) {
@@ -57,6 +58,7 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <meta charset="utf-8" />
      <!-- Le Google font -->
+    <link href='http://fonts.googleapis.com/css?family=Eagle+Lake&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -91,44 +93,32 @@ echo $OUTPUT->doctype() ?>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="<?php echo $CFG->wwwroot; ?>">The Tiny Project</a>
+          <a class="logo" href="<?php echo $CFG->wwwroot; ?>"></a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="<?php echo $CFG->wwwroot; ?>"><i class="icon-home icon-white"></i> <?php echo get_string('home'); ?></a></li>
-              <li><a href="mailto:your-email@address"><i class="icon-envelope icon-white"></i> <?php echo get_string('contact', 'theme_tiny'); ?></a></li>
-              <li class="dropdown">
+          <?php echo $custommenu; ?>
+
               <?php
-          if (isloggedin() || isguestuser()) { ?>
+            if (isloggedin()) { ?>
+                <li class="dropdown">
                 <a href="<?php echo $CFG->wwwroot.'/user/view.php?id='.$USER->id.'&amp;course='.$COURSE->id;?>" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user icon-white"></i> <?php echo $USER->firstname.'&nbsp;'.$USER->lastname; ?>&nbsp;<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="<?php echo $CFG->wwwroot ?>/my/"><i class="icon-tasks"></i> <?php echo get_string('mycourses'); ?></a></li>
-                  <li><a href="#"><i class="icon-briefcase"></i> My private files</a></li>
-                  <li><a href="#"><i class="icon-edit"></i> Edit my profile</a></li>
-                  <?php
-          } else { ?>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-leaf icon-white"></i> <?php echo get_string('about','theme_tiny'); ?><b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                  <?php
-          } ?>
-                </ul>
-              </li>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo $CFG->wwwroot ?>/my/"><i class="icon-tasks"></i>
+                        <?php echo get_string('mycourses'); ?></a></li>
+                        <li><a href="#"><i class="icon-briefcase"></i> My private files</a></li>
+                        <li><a href="#"><i class="icon-edit"></i> Edit my profile</a></li>
+                    </ul>
+                </li>
+            <?php
+        } ?>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-plane icon-white"></i>&nbsp;&nbsp;Language&nbsp;<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-plane icon-white"></i> <?php echo get_string('language'); ?>&nbsp;<b class="caret"></b></a>
                 <ul class="dropdown-menu lang-menu">
                   <li class="lang-menu"><?php echo $OUTPUT->lang_menu(); ?></li>
                 </ul>
               </li>
             </ul>
-
-
             <?php include('loginout.php'); ?>
+
 
          </div><!--/.nav-collapse -->
         </div>

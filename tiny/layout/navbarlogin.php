@@ -21,9 +21,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-if (!isloggedin() or isguestuser()) {
-    echo '<a href="'.$CFG->wwwroot.'/login/index.php "><button type="submit" class="btn btn-small btn-primary pull-right"><i class="icon-hand-right icon-white"></i>&nbsp;&nbsp;'.get_string('login').'</button></a>';
-} else {
+if (isloggedin()) {
+
     echo '<a href="'.$CFG->wwwroot.'/login/logout.php?sesskey='. sesskey().'"><button type="submit" class="btn btn-small btn-primary pull-right">'.get_string('logout').'&nbsp;&nbsp;<i class="icon-hand-left icon-white"></i></button></a>';
 
 } ?>

@@ -2,40 +2,37 @@
 -------------------------*/
 
 .side-pre-only .tiny-row-fluid .span3.left {
-    width: 23%;
-    *width: 23%;
+    width: 23%!important;
+    *width: 23%!important;
 }
 .side-pre-only .tiny-row-fluid .span6 {
-    width: 72%;
-    *width: 72%;
+    width: 72%!important;
+    *width: 72%!important;
 }
 .side-pre-only .tiny-row-fluid .span3.right {
-    width: 0;
+    width: 0!important;
 }
 
 .side-post-only .tiny-row-fluid .span3.left {
-    width: 0;
+    width: 0!important;
 }
 .side-post-only .tiny-row-fluid .span6 {
-    width: 72%;
-    *width: 72%;
+    width: 72%!important;
+    *width: 72%!important;
 }
 .side-post-only .tiny-row-fluid .span3.right {
-    width: 23%;
-    *width: 23%;
+    width: 23%!important;
+    *width: 23%!important;
 }
 
 .content-only .tiny-row-fluid .span3.left {
-    width: 0;
+    width: 0!important;
 }
 .content-only .tiny-row-fluid .span6 {
-    width: 100%;
-    *width: 99%;
-    margin: 0;
+    width: 100%!important;
+    *width: 99%!important;
+    margin: 0!important;
 }
 .content-only .tiny-row-fluid .span3.right {
-    width: 0;
+    width: 0!important;
 }
-
-
-

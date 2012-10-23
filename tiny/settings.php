@@ -29,4 +29,12 @@ if ($ADMIN->fulltree) {
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $settings->add($setting);
 
+    // Theme override of custommenu items
+    $name = 'theme_tiny/custommenuitems';
+    $title = get_string('custommenuitems', 'admin');
+    $description = get_string('configcustommenuitems', 'admin');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $settings->add($setting);
+
 }

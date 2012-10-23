@@ -7,7 +7,7 @@ h2.headingblock,
 h1.headermain,
 h3.name,
 .block .header .title h2 {
-    font-family: [[setting:fontface]]
+    font-family: '[[setting:fontface]]';
 }
 
 @font-face {

@@ -27,7 +27,7 @@ $THEME->name = 'tiny';
 
 $THEME->parents = array('base');
 
-$THEME->sheets = array('tiny-bootstrap', 'tiny-layout', 'tiny-core', 'tiny-dock', 'tiny-bootstrap-responsive', 'tiny-settings');
+$THEME->sheets = array('tiny-bootstrap', 'tiny-layout', 'tiny-core', 'tiny-dock', 'tiny-bootstrap-responsive', 'undo', 'tiny-settings');
 
 $THEME->parents_exclude_sheets = array('base'=>array('pagelayout'));
 
@@ -38,7 +38,6 @@ $THEME->layouts = array(
     'base' => array(
         'file' => 'default.php',
         'regions' => array(),
-        'options' => array('noheader'=>true),
     ),
     // Standard layout with blocks, this is recommended for most pages with default information
     'standard' => array(
