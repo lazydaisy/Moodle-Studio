@@ -216,7 +216,6 @@
     margin-left: 0;
   }
 
-.content-only .tiny-row-fluid .span6,
   .tiny-row-fluid .span12 {
     width: 100%;
     *width: 99.94680851063829%;
@@ -229,8 +228,6 @@
     width: 82.90598290598291%;
     *width: 82.8527914166212%;
   }
-  .side-pre-only .tiny-row-fluid .span6,
-  .side-post-only .tiny-row-fluid .span6,
   .tiny-row-fluid .span9 {
     width: 74.35897435897436%;
     *width: 74.30578286961266%;
@@ -255,8 +252,6 @@
     width: 31.623931623931625%;
     *width: 31.570740134569924%;
   }
-  .side-pre-only .tiny-row-fluid .span3.left,
-  .side-post-only .tiny-row-fluid .span3.right,
   .tiny-row-fluid .span3 {
     width: 23.076923076923077%;
     *width: 23.023731587561375%;

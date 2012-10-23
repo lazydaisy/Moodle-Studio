@@ -106,16 +106,18 @@ echo $OUTPUT->doctype() ?>
                         <?php echo get_string('mycourses'); ?></a></li>
                         <li><a href="#"><i class="icon-briefcase"></i> My private files</a></li>
                         <li><a href="#"><i class="icon-edit"></i> Edit my profile</a></li>
+                        <li class="lang-menu"><?php echo $OUTPUT->lang_menu(); ?></li>
                     </ul>
                 </li>
             <?php
-        } ?>
+        } else { ?>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-plane icon-white"></i> <?php echo get_string('language'); ?>&nbsp;<b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog icon-white"></i> <?php echo get_string('language'); ?>&nbsp;<b class="caret"></b></a>
                 <ul class="dropdown-menu lang-menu">
                   <li class="lang-menu"><?php echo $OUTPUT->lang_menu(); ?></li>
                 </ul>
               </li>
+            <?php } ?>
             </ul>
             <?php include('loginout.php'); ?>
 

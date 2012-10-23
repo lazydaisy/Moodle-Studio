@@ -260,10 +260,10 @@ class theme_tiny_core_renderer extends core_renderer {
             $url->param('sesskey', sesskey());
             if ($this->page->user_is_editing()) {
                 $url->param('edit', 'off');
-                $text = '<a href="'.$url.'" class="btn btn-success" title="'.get_string('turneditingoff').'"><i class="icon-edit icon-white"></i></a>';
+                $text = '<a href="'.$url.'" class="btn btn-danger" title="'.get_string('turneditingoff').'"><i class="icon-off icon-white"></i></a>';
             } else {
                 $url->param('edit', 'on');
-                $text = '<a href="'.$url.'" class="btn btn-danger"  title="'.get_string('turneditingon').'"><i class="icon-edit icon-white"></i></a>';
+                $text = '<a href="'.$url.'" class="btn btn-success"  title="'.get_string('turneditingon').'"><i class="icon-edit icon-white"></i></a>';
             }
 
             return ($text);

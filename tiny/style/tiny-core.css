@@ -406,6 +406,22 @@ table.minicalendar tr td.weekend {
   color: #f00;
   }
 
+.minicalendar th {
+    background-color: #abc;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.minicalendar td {
+    background-color: #f6f6f6;
+    text-transform: uppercase;
+}
+
+.block .minicalendar th {
+    font-size: 0.6em;
+}
+
 /* Redirect
 -------------------------*/
 .redirectmessage {

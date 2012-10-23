@@ -57,3 +57,21 @@ li.section.main {
   font-family: "Tempus Sans ITC", sans-serif;
   font-style: italic;
 }
+
+@media (min-width: 240px) and (max-width: 768px) {
+    .side-pre-only .container-fluid .tiny-row-fluid .span3.right,
+    .side-post-only .container-fluid .tiny-row-fluid .span3.left,
+    .content-only .container-fluid .tiny-row-fluid .span3 {
+        width: 0!important;
+    }
+    .side-pre-only .container-fluid .tiny-row-fluid .span3.left,
+    .side-post-only .container-fluid .tiny-row-fluid .span3.right,
+    .side-pre-only .container-fluid .tiny-row-fluid .span6,
+    .side-post-only .container-fluid .tiny-row-fluid .span6,
+    .content-only .container-fluid .tiny-row-fluid .span6 {
+        width: 100%;
+        *width: 99.94680851063829%;
+        margin: 0!important;
+    }
+
+}
