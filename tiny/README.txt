@@ -1,8 +1,8 @@
-THE TINY PROJECT: A work in progress
+THE TINY BOOTSTRAP PROJECT: A work in progress
 
 ------------------------------------
 
-Tiny, is a fluid width, fully responsive, Moodle theme built using Twitter Bootstrap 2.0 with a basic grid scafolding layout, which is based on 960 Grid System (960.gs), and combined with javascript plugins, typography, form controls, and more.
+Tiny, is a fluid width, fully responsive, Moodle theme built using Twitter Bootstrap 2.0 with a basic grid scafolding layout, which is based on 960 Grid System (960.gs), and combined with javascript plugins, typography, form controls, and more.
 
 Tiny is, however, only intended as a starting point for other themes to build upon.
 
@@ -16,9 +16,12 @@ UPDATE: 22 October 2012
 ---------------------------------------
 
 Added renderers taken from Bas Brands' Bootstrap which incorporates contributed work by Stuart Lamour and David Scotson, and helped getting the custommenu to work correctly in top menu navbar.
-The icon renderer code that replaces Moodle standard icons with a Glyphicons sprite image. I have added &nbsp; to the icon renderer code which now places a space between the lcon and the title of the link.
+The icon renderer code that replaces Moodle standard icons with a Glyphicons sprite image. I have added &nbsp; to the icon renderer code which now places a space between the icon and the title of its associated hyperlink.
 
-I have also applied more changes to the topmenu including adding icons to the top level title labels amd also resiting the lang menu when logged in.
+Applied more changes to the topmenu navbar, including adding icons to all top level custommenu menu items (see: tiny/renderers.php) amd also resited the Lang menu when logged in (now under username dropdown).
+
+NEW FEATURE: Added a theme specific custommenu, which you will find in Tiny's Custom settings page. It works in the same way the as before, the only difference it is that it is set in the theme's Custom settings page and NOT in Theme settings. This means you could have lots of child themes based on tiny and each have it;s own menu. Which could be good for Course specific themes.
+See http://tracker.moodle.org/browse/MDL-31043 for more information about this feature
 
 
 UPDATE: 09 October 2012
