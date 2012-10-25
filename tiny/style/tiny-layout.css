@@ -1,32 +1,19 @@
 /* Pagelayout
 -------------------------*/
 
-.side-pre-only .container-fluid .tiny-row-fluid .span3.left {
-    width: 23.404255319148934%;
-    *width: 23.351063829787233%;
-}
-}
-.side-pre-only.container-fluid .tiny-row-fluid .span6 {
-    width: 74.46808510638297%;
-    *width: 74.41489361702126%;
-}
-.side-pre-only .container-fluid .tiny-row-fluid .span3.right {
-    width: 0!important;
-}
-
-.side-post-only .container-fluid .tiny-row-fluid .span3.left {
-    width: 0!important;
-}
-.side-post-only .container-fluid .tiny-row-fluid .span6 {
-    width: 74.46808510638297%;
-    *width: 74.41489361702126%;
-}
+.side-pre-only .container-fluid .tiny-row-fluid .span3.left,
 .side-post-only .container-fluid .tiny-row-fluid .span3.right {
     width: 23.404255319148934%;
     *width: 23.351063829787233%;
 }
-
-.content-only .container-fluid .tiny-row-fluid .span3.left {
+.side-pre-only .container-fluid .tiny-row-fluid .span6,
+.side-post-only .container-fluid .tiny-row-fluid .span6 {
+    width: 74.46808510638297%;
+    *width: 74.41489361702126%;
+}
+.content-only .container-fluid .tiny-row-fluid .span3,
+.side-pre-only .container-fluid .tiny-row-fluid .span3.right,
+.side-post-only .container-fluid .tiny-row-fluid .span3.left {
     width: 0!important;
 }
 .content-only .container-fluid .tiny-row-fluid .span6 {
@@ -34,7 +21,3 @@
     *width: 99.94680851063829%;
     margin: 0!important;
 }
-.content-only .container-fluid .tiny-row-fluid .span3.right {
-    width: 0!important;
-}
-
