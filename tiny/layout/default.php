@@ -104,8 +104,8 @@ echo $OUTPUT->doctype() ?>
                     <ul class="dropdown-menu">
                         <li><a href="<?php echo $CFG->wwwroot ?>/my/"><i class="icon-tasks"></i>
                         <?php echo get_string('mycourses'); ?></a></li>
-                        <li><a href="#"><i class="icon-briefcase"></i> My private files</a></li>
-                        <li><a href="#"><i class="icon-edit"></i> Edit my profile</a></li>
+                        <li><a href="<?php echo $CFG->wwwroot; ?>/user/files.php"><i class="icon-briefcase"></i> My private files</a></li>
+                        <li><a href="<?php echo $CFG->wwwroot; ?>/user/profile.php"><i class="icon-edit"></i> Edit my profile</a></li>
                         <li class="lang-menu"><?php echo $OUTPUT->lang_menu(); ?></li>
                     </ul>
                 </li>
