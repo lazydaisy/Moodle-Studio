@@ -143,7 +143,8 @@ echo $OUTPUT->doctype() ?>
 
 <!-- row 1 - main-content -->
 
- <div class="tiny-row-fluid">
+<div class="tiny-row-fluid">
+<div id="page-content">
 
     <?php if ($hassidepre) { ?>
     <div class="span3 left">
@@ -156,7 +157,11 @@ echo $OUTPUT->doctype() ?>
     <?php } ?>
 
     <div class="span6">
-        <?php echo $OUTPUT->main_content(); ?>
+        <div id="region-main">
+            <div class="region-content">
+                <?php echo $OUTPUT->main_content(); ?>
+            </div>
+        </div>
     </div>
 
     <?php if ($hassidepost) { ?>
@@ -169,6 +174,7 @@ echo $OUTPUT->doctype() ?>
     </div>
     <?php } ?>
 
+</div>
 </div>
 <!-- end row 1 -->
 

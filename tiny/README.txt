@@ -8,6 +8,16 @@ Tiny is, however, only intended as a starting point for other themes to build up
 
 It is not recommend to use this theme on a production site!
 
+UPDATE: 27 October 2012
+---------------------------------------
+Fixed problem with 'Add resource or activity' link, in course page, which was not working due to a missing div id parameter in default.php pagelayout.
+
+Added z-index to yui3-widget to fix modchooser dialogue container visibility problem.
+
+UPDATE: 26 October 2012
+---------------------------------------
+Added hyperlink URLs to username dropdown in tiny-navbar top menu.
+
 UPDATE: 23 October 2012
 ---------------------------------------
 Added some @media queries that helps clear up the responsive design feature, which was not working as expected, with respect to moodle page layouts side-pre-only/side-post-only/content-only. Probably needs more work and testing with real mobile/tablet devices, but looking good none the less.

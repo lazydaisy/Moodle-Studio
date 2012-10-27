@@ -188,22 +188,7 @@ div.rememberpass {
 .theme_description h2 {
     padding-top: 0.5em;
 }
-/* COMMAND ICONS (2011-10-13)
--------------------------------------*/
-img.iconsmall,
-.block.block_with_controls div.header div.commands a img,
-.course-content ul.topics li.section .right img,
-.course-content ul.topics li.section .left img {
-    height:15px;
-    margin:2px;
-    width:15px;
-    background-color: #eee;
-    border: 1px solid #aaa;
-    padding:1px;
-    -webkit-border-radius:5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
+
 /* Blocks
 -------------------------*/
 .block_settings .content #settingsnav.box ul.block_tree li.type_unknown hr,
@@ -527,4 +512,11 @@ AJAX User Enroller Panel
     z-index: 99999!important;
 }
 
+/* z-index fixes
+-------------------------*/
+div.moodle-dialogue-base div.yui3-widget{
+    z-index: 9999!important;
+}
+/* Custommenu adjustments
+-------------------------*/
 #custommenu {clear: right;}
