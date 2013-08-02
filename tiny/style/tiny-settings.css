@@ -1,22 +1,21 @@
 /* Custom CSS Settings
 -------------------------*/
 
-h1, h2, h3,
-h1.main, h2.main, h3.main,
+h1, h2, h3,h1.main, h2.main, h3.main,
 h2.headingblock,
 h1.headermain,
 h3.name,
+.default-unit h1,
 .block .header .title h2 {
     font-family: '[[setting:fontface]]';
 }
+.tiny-navbar .brand {
+    background-image: url([[setting:brandicon]]);
+}
 
 @font-face {
-      font-family: [[setting:fontface]];
-      src: url([[setting:font]]) format("truetype");
-}
-@font-face {
-      font-family: Mordred;
-      src: url(tiny/font/Mordred.ttf) format("truetype");
+    font-family: [[setting:fontface]];
+    src: url([[setting:fontwww]][[setting:fontface]].ttf) format("truetype");
 }
 
 [[setting:customcss]]
